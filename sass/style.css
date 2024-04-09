@@ -257,6 +257,14 @@ table {
   position: relative;
 }
 
+.ContainerAll {
+  background-attachment: fixed;
+  background-image: url(../img/Fondo\ seeds.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .ContainerMision {
   position: relative;
   display: flex;
@@ -265,10 +273,6 @@ table {
   align-items: center;
   padding: 3rem 0rem 5rem 0rem;
   font-family: "Montserrat", sans-serif;
-  background-image: url(../img/Fondo\ seeds.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 90vh;
 }
 .ContainerMision .ContainerTittleMision {
@@ -309,6 +313,7 @@ table {
   align-items: center;
   padding: 4rem 0rem 4rem 0rem;
   min-height: 90vh;
+  background-color: white;
 }
 .ContainerProductos .ContainerTittleProductos {
   display: flex;
@@ -363,10 +368,6 @@ table {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  background-image: url(../img/Fondo\ seeds.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-bottom: 3rem;
   min-height: 90vh;
 }
@@ -412,10 +413,6 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/Fondo\ seeds.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 2rem 0rem 10rem 0rem;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -462,6 +459,7 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  background-color: white;
 }
 footer .ContainerFooter {
   display: flex;
