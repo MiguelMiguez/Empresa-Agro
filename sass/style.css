@@ -224,6 +224,7 @@ table {
   background-image: url(../img/Fondo\ desenfocado.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .ContainerLanding .ContainerBrand {
   display: flex;
@@ -267,6 +268,7 @@ table {
   background-image: url(../img/Fondo\ seeds.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .ContainerMision .ContainerTittleMision {
   background-color: #4d8961;
