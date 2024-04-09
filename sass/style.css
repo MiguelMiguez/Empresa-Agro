@@ -420,7 +420,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0rem 10rem 0rem;
+  padding: 0rem 0rem 10rem 0rem;
   color: white;
   font-family: "Montserrat", sans-serif;
   min-height: 90vh;
