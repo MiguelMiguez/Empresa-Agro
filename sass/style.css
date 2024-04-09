@@ -224,7 +224,6 @@ table {
   background-image: url(../img/Fondo\ desenfocado.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .ContainerLanding .ContainerBrand {
   display: flex;
@@ -268,7 +267,6 @@ table {
   background-image: url(../img/Fondo\ seeds.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .ContainerMision .ContainerTittleMision {
   background-color: #4d8961;
@@ -365,7 +363,6 @@ table {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-bottom: 3rem;
 }
 .ContainerControlEnfermedades .ContainerTittleEnfermedades {
