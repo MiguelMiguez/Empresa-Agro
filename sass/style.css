@@ -1,0 +1,504 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.containerNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+.containerNavbar .buttonToggleMenu {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.containerNavbar .buttonToggleMenu .line {
+  width: 70%;
+  height: 3px;
+  background-color: #00471A;
+  border-radius: 20px;
+}
+.containerNavbar .containerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: auto;
+}
+.containerNavbar .containerLogo a .BrandNavbar {
+  width: 60px;
+  height: auto;
+}
+.containerNavbar .containerMenuLaptop {
+  display: none;
+}
+
+.containerMenuHidden {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 200px;
+  height: 100%;
+  background-color: #00471A;
+  color: #fff;
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 999;
+}
+.containerMenuHidden .menuHidden {
+  margin-top: 80px;
+}
+.containerMenuHidden .menuHidden li {
+  margin-bottom: 20px;
+}
+.containerMenuHidden .menuHidden li a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.opened {
+  right: 0;
+}
+
+.closed {
+  right: -300px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .containerNavbar {
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+  .containerNavbar .buttonToggleMenu {
+    display: none;
+  }
+  .containerNavbar .containerMenuLaptop {
+    display: contents;
+    width: 100%;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #00471A;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
+    border-bottom: 1px solid #FE6600;
+  }
+  .containerMenuHidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .containerNavbar {
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+  .containerNavbar .buttonToggleMenu {
+    display: none;
+  }
+  .containerNavbar .containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerNavbar .containerMenuLaptop {
+    display: contents;
+    width: 100%;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding-left: 5rem;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li {
+    position: relative;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a {
+    text-decoration: none;
+    color: #00471A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 1px rgba(0, 71, 26, 0.2470588235);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
+    color: #FE6600;
+  }
+  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover::after {
+    background-color: #FE6600;
+    transform: scaleX(1);
+  }
+}
+.ContainerLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url(../img/Fondo\ desenfocado.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.ContainerLanding .ContainerBrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.ContainerLanding .ContainerBrand h1 {
+  display: none;
+}
+.ContainerLanding .ContainerBrand h2 {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+.ContainerLanding .ContainerBrand .BrandLanding {
+  width: 250px;
+  height: auto;
+  padding-bottom: 3rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.582));
+  z-index: 1;
+  position: relative;
+}
+
+.ContainerMision {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 5rem 0rem;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/Fondo\ seeds.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.ContainerMision .ContainerTittleMision {
+  background-color: #4d8961;
+  text-align: center;
+  font-size: 2rem;
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+  padding: 1.1rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+  position: absolute;
+  top: 5rem;
+  z-index: 2;
+}
+.ContainerMision .ContainerTittleMision h2 {
+  text-align: center;
+  font-weight: 750;
+  letter-spacing: 1px;
+}
+.ContainerMision .ContainerTextMision {
+  background-color: rgba(0, 71, 26, 0.8901960784);
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 75px 2rem 0rem 2rem;
+}
+
+.ContainerProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem 4rem 0rem;
+}
+.ContainerProductos .ContainerTittleProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  letter-spacing: -1.5px;
+  color: #356E48;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.692);
+}
+.ContainerProductos .ContaineProductosDestacados {
+  background-color: #F3F3F3;
+  padding: 5rem 0rem 4rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
+  width: 70px;
+  height: auto;
+}
+.ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos {
+  padding-top: 3rem;
+}
+.ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos a .ButtonVerProductos {
+  background-color: #356E48;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-style: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.692);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.575);
+}
+
+.ContainerControlEnfermedades {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-image: url(../img/Fondo\ seeds.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 3rem;
+}
+.ContainerControlEnfermedades .ContainerTittleEnfermedades {
+  width: 70%;
+  background-color: #356E48;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  z-index: 2;
+  height: 200px;
+}
+.ContainerControlEnfermedades .ContainerTittleEnfermedades .TittleControl {
+  padding: 2.5rem 2rem 0rem 1rem;
+  width: 200px;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.ContainerControlEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+  padding: 0rem 2rem 2.5rem 1rem;
+  font-size: 2.5rem;
+  color: #5FB15C;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.ContainerControlEnfermedades .ContainerImagenEnfermedades {
+  margin: 320px 0px 0px 110px;
+  z-index: 3;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.ContainerControlEnfermedades .ContainerImagenEnfermedades img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+}
+
+.ContainerLogistica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Fondo\ seeds.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0rem 10rem 0rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.ContainerLogistica .ContainerInfoLogistica {
+  background-color: #356E48;
+  padding: 2rem 2rem 4rem 2rem;
+}
+.ContainerLogistica .ContainerInfoLogistica h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.ContainerLogistica .ContainerInfoLogistica p {
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  font-weight: 300;
+}
+.ContainerLogistica .ContainerInfoLogistica ul {
+  padding: 0.5rem 2rem 0rem 2rem;
+  font-weight: 300;
+}
+.ContainerLogistica .ContainerInfoLogistica ul li {
+  padding-bottom: 1rem;
+  list-style-type: disc;
+}
+.ContainerLogistica .ContainerImgLogistica {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 780px;
+}
+.ContainerLogistica .ContainerImgLogistica img {
+  width: 100%;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  margin-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+footer .ContainerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+footer .ContainerFooter .ContainerLogoFooter img {
+  width: 200px;
+  height: auto;
+}
+footer .ContainerFooter .ContainerNavbarFooter {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+footer .ContainerFooter .ContainerNavbarFooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer .ContainerFooter .ContainerSocialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer .ContainerFooter .ContainerSocialMedia a img {
+  width: 30px;
+  height: auto;
+}
+footer .ContainerCopy {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .ContainerCopy p {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */

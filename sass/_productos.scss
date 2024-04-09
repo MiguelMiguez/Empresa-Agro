@@ -1,0 +1,60 @@
+.ContainerProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem 4rem 0rem;
+
+    .ContainerTittleProductos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        font-weight: 900;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        letter-spacing: -1.5px;
+        color: $colorverdealternativo;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.692);
+    }
+
+    .ContaineProductosDestacados{
+        background-color: #F3F3F3;
+        padding: 5rem 0rem 4rem 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .ContainerImgProducts{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+            
+
+            .ImgProducts{
+                width: 70px;
+                height: auto;
+            }
+        }
+
+        .ContainerButtonVerProductos{
+            padding-top: 3rem;
+            a .ButtonVerProductos{
+                background-color: $colorverdealternativo;
+                color: white;
+                letter-spacing: 0.5px;
+                padding: 0.7rem 1.5rem 0.7rem 1.5rem ;
+                border-radius: 20px;
+                text-transform: uppercase;
+                font-family: $font;
+                font-size: 1rem;
+                font-weight: 600;
+                border-style: none;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.692);
+                box-shadow:0 3px 3px rgba(0, 0, 0, 0.575); ;
+            }
+        }
+    }
+}

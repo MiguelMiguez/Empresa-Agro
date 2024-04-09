@@ -1,0 +1,47 @@
+.ContainerLanding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url(../img/Fondo\ desenfocado.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .ContainerBrand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        color: white;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        h1{
+            display: none;
+        }
+
+        h2{
+            font-size: 1.3rem;
+            font-family: $font;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            width: 200px;
+            letter-spacing: 2px;
+            line-height: 1.2; 
+        }
+        
+        .BrandLanding{
+            width: 250px;
+            height: auto;
+            padding-bottom: 3rem;
+            filter: drop-shadow(0 1px  2px rgba(0, 0, 0, 0.582));
+            z-index: 1;
+            position: relative;
+        }
+    }
+    
+
+}
+

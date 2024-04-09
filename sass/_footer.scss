@@ -1,0 +1,52 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    .ContainerFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .ContainerLogoFooter{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+        .ContainerNavbarFooter{
+            padding: 2rem;
+            font-family: $font;
+            text-transform: uppercase;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+
+        .ContainerSocialMedia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            a img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+    .ContainerCopy{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $font;
+        }
+    }
+}

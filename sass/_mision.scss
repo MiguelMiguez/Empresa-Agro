@@ -1,0 +1,48 @@
+.ContainerMision {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem 5rem 0rem;
+    font-family: $font;
+    background-image: url(../img/Fondo\ seeds.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  
+    .ContainerTittleMision {
+      background-color: #4d8961;
+      text-align: center;
+      font-size: 2rem;
+      width: 10rem;
+      border-radius: 5px;
+      color: white;
+      padding: 1.1rem;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+      position: absolute;
+      top: 5rem;
+      z-index: 2;
+  
+      h2 {
+        text-align: center;
+        font-weight: 750;
+        letter-spacing: 1px;
+      }
+    }
+  
+    .ContainerTextMision {
+      background-color: #00471ae3;
+      color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      font-family: $font;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      margin: 75px 2rem 0rem 2rem;
+    }
+}
+  

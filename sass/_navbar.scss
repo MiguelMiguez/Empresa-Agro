@@ -1,0 +1,178 @@
+.containerNavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    .buttonToggleMenu{
+        position: relative;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        .line{
+            width: 70%;
+            height: 3px;
+            background-color: #00471A;
+            border-radius: 20px;
+        }
+    }
+    .containerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: auto;
+        a{
+            .BrandNavbar{
+                width: 60px;
+                height: auto;
+            }
+        }
+        
+    }
+    .containerMenuLaptop{
+        display: none;
+    }
+}
+
+.containerMenuHidden{
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 200px;
+  height: 100%;
+  background-color: #00471A;
+  color: #fff;
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 999;
+  .menuHidden{
+    margin-top: 80px;
+    li{
+        margin-bottom: 20px;
+        a{
+            font-family: $font;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            text-shadow: 0 4px 2px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+        }
+    }
+  }
+}
+
+.opened{
+    right: 0;
+}
+
+.closed{
+    right: -300px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .containerNavbar{
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        .buttonToggleMenu{
+            display: none;
+        }
+        .containerMenuLaptop{
+            display: contents;
+            width: 100%;
+            .menuLaptop{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                li{
+                    a{
+                        font-family: $font;
+                        text-decoration: none;
+                        color: #00471A;
+                        font-size: 1.2rem;
+                        text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                        text-transform: uppercase;
+                    }
+                    a:hover{
+                        border-bottom: 1px solid #FE6600;
+                    }
+                }
+            }
+        }
+    }
+    .containerMenuHidden{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px){
+    .containerNavbar{
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        
+        .buttonToggleMenu{
+            display: none;
+        }
+        .containerLogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerMenuLaptop{
+            display: contents;
+            width: 100%;
+            .menuLaptop{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 80%;
+                padding-left: 5rem;
+                li {
+                    position: relative; 
+        
+                    a {
+                        text-decoration: none;
+                        color: #00471A;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.1rem;
+                        padding-bottom: 5px;
+                        text-shadow: 0 1px 1px #00471a3f;
+                        transition: color 0.3s ease, text-shadow 0.3s ease; 
+                        text-transform: uppercase;
+        
+                        &::after { 
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            bottom: -4px;
+                            left: 0;
+                            background-color: transparent;
+                            transform: scaleX(0);
+                            transition: all 0.3s ease-in-out;
+                        }
+        
+                        &:hover {
+                            color: #FE6600;
+        
+                            &::after { 
+                                background-color: #FE6600;
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
