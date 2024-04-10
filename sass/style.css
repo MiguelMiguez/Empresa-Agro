@@ -221,7 +221,7 @@ table {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-image: url(../img/Fondo\ desenfocado.png);
+  background-image: url(../img/portada\ 3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,7 +245,7 @@ table {
   text-transform: uppercase;
   text-align: center;
   width: 200px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.2;
 }
 .ContainerLanding .ContainerBrand .BrandLanding {
@@ -256,7 +256,29 @@ table {
   z-index: 1;
   position: relative;
 }
+.ContainerLanding .ContainerButtonDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.ContainerLanding .ContainerButtonDown .ButtonDown {
+  background-color: transparent;
+  border: none;
+}
+.ContainerLanding .ContainerButtonDown .ButtonDown .ImgBtnDown {
+  animation: moveUpDown 2s ease-in-out infinite;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+}
 
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
 .ContainerMision {
   position: relative;
   display: flex;
@@ -364,8 +386,7 @@ table {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding-bottom: 3rem;
-  min-height: 90vh;
+  padding-bottom: 5rem;
   background-image: url(../img/seeds2.png);
   background-repeat: no-repeat;
   background-size: auto;

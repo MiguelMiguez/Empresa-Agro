@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background-image: url(../img/Fondo\ desenfocado.png);
+    background-image: url(../img/portada\ 3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
             text-transform: uppercase;
             text-align: center;
             width: 200px;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 1.2; 
         }
         
@@ -42,6 +42,29 @@
         }
     }
     
+    .ContainerButtonDown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+       .ButtonDown{
+        background-color: transparent;
+        border: none;
+        .ImgBtnDown {
+            animation: moveUpDown 2s ease-in-out infinite;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8)); // Aquí agregamos el drop shadow suave al SVG
+
+        }
+       }
+    }
 
 }
 
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
