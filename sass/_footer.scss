@@ -26,6 +26,14 @@ footer{
                 justify-content: center;
                 align-items: center;
                 gap: 2rem;
+                li a{
+                    color: $colorverde;
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+                li a:hover{
+                    color: $colornaranja;
+                }
             }
         }
 
@@ -50,4 +58,19 @@ footer{
             font-family: $font;
         }
     }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    footer{
+        .ContainerFooter{
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 7rem;
+            
+        }
+    }
+
+
 }

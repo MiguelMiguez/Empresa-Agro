@@ -163,6 +163,7 @@ table {
     justify-content: center;
     align-items: center;
     height: 120px;
+    z-index: 999;
   }
   .containerNavbar .buttonToggleMenu {
     display: none;
@@ -248,7 +249,7 @@ table {
   letter-spacing: 1px;
   line-height: 1.2;
 }
-.ContainerLanding .ContainerBrand .BrandLanding {
+.ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
   width: 250px;
   height: auto;
   padding-bottom: 3rem;
@@ -260,7 +261,9 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  bottom: 0;
 }
 .ContainerLanding .ContainerButtonDown .ButtonDown {
   background-color: transparent;
@@ -279,7 +282,155 @@ table {
     transform: translateY(20px);
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerLanding {
+    background-image: none;
+  }
+  .ContainerLanding .ContainerBrand {
+    flex-direction: row-reverse;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle h2 {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    background-color: rgba(0, 71, 26, 0.8901960784);
+    padding: 3rem;
+    text-align: start;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.582));
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle h2 span {
+    font-size: 4.4rem;
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    background-image: url(../img/portada\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.582));
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
+    width: 300px;
+    height: auto;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerLanding {
+    background-image: none;
+  }
+  .ContainerLanding .ContainerBrand {
+    flex-direction: row-reverse;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(0, 71, 26, 0.8901960784);
+    position: absolute;
+    left: 0;
+    padding: 4rem;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle .SecondTittle {
+    font-size: 2.5rem;
+    width: auto;
+    text-align: start;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle .SecondTittle span {
+    font-size: 6rem;
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    background-image: url(../img/portada\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
+    width: 400px;
+    height: auto;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ContainerLanding {
+    background-image: none;
+  }
+  .ContainerLanding .ContainerBrand {
+    flex-direction: row-reverse;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(0, 71, 26, 0.8901960784);
+    position: absolute;
+    left: 0;
+    padding: 4rem;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle .SecondTittle {
+    font-size: 2.5rem;
+    width: auto;
+    text-align: start;
+  }
+  .ContainerLanding .ContainerBrand .ContainerSecondTittle .SecondTittle span {
+    font-size: 6rem;
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    background-image: url(../img/portada\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+  }
+  .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
+    width: 500px;
+    height: auto;
+    margin-right: 5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ContainerAll {
+    background-image: url(../img/SEEDS\ CHICAS.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+}
 .ContainerMision {
+  min-height: 90vh;
+  background-image: url(../img/seeds2.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContainerMision .ContainerInfoMision {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -287,13 +438,9 @@ table {
   align-items: center;
   padding: 3rem 0rem 5rem 0rem;
   font-family: "Montserrat", sans-serif;
-  min-height: 90vh;
-  background-image: url(../img/seeds2.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  width: auto;
 }
-.ContainerMision .ContainerTittleMision {
+.ContainerMision .ContainerInfoMision .ContainerTittleMision {
   background-color: #4d8961;
   text-align: center;
   font-size: 2rem;
@@ -301,17 +448,17 @@ table {
   border-radius: 5px;
   color: white;
   padding: 1.1rem;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
   position: absolute;
   top: 5rem;
   z-index: 2;
 }
-.ContainerMision .ContainerTittleMision h2 {
+.ContainerMision .ContainerInfoMision .ContainerTittleMision h2 {
   text-align: center;
   font-weight: 750;
   letter-spacing: 1px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
-.ContainerMision .ContainerTextMision {
+.ContainerMision .ContainerInfoMision .ContainerTextMision {
   background-color: rgba(0, 71, 26, 0.8901960784);
   color: white;
   border-radius: 10px;
@@ -322,8 +469,106 @@ table {
   font-size: 1.2rem;
   line-height: 1.2;
   margin: 75px 2rem 0rem 2rem;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerMision {
+    background-image: none;
+  }
+  .ContainerMision .ContainerInfoMision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTittleMision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    padding: 0;
+    font-size: 3rem;
+    border-radius: 0;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTextMision {
+    border-radius: 0;
+    width: 65%;
+    margin: 0;
+    padding: 3rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerMision {
+    background-image: none;
+  }
+  .ContainerMision .ContainerInfoMision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 90vh;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTittleMision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    padding: 0;
+    font-size: 3rem;
+    border-radius: 0;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTextMision {
+    border-radius: 0;
+    width: 65%;
+    margin: 0;
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  .ContainerMision {
+    background-image: none;
+    min-height: 95vh;
+  }
+  .ContainerMision .ContainerInfoMision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTittleMision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    font-size: 5rem;
+    border-radius: 0;
+  }
+  .ContainerMision .ContainerInfoMision .ContainerTextMision {
+    border-radius: 0;
+    width: 70%;
+    margin: 0;
+    padding: 5rem;
+    font-size: 2rem;
+  }
+}
 .ContainerProductos {
   display: flex;
   flex-direction: column;
@@ -379,28 +624,76 @@ table {
   border-style: none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.692);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.575);
+  transition: all 0.3s ease 0s;
+}
+.ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos a .ButtonVerProductos:hover {
+  background-color: white;
+  color: #356E48;
+  transform: translateY(-7px);
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerProductos .ContainerTittleProductos {
+    font-size: 3.5rem;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
+    width: 90px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ContainerProductos .ContainerTittleProductos {
+    font-size: 4.5rem;
+    padding-bottom: 5rem;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
+    width: 130px;
+    height: auto;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos {
+    padding-top: 3rem;
+  }
+  .ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos a .ButtonVerProductos {
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 40px;
+  }
+}
 .ContainerControlEnfermedades {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  padding-bottom: 5rem;
   background-image: url(../img/seeds2.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
-.ContainerControlEnfermedades .ContainerTittleEnfermedades {
+.ContainerControlEnfermedades .ContainerInfoEnfermedades {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+}
+.ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades {
   width: 70%;
   background-color: #356E48;
   font-family: "Montserrat", sans-serif;
-  position: absolute;
   z-index: 2;
   height: 200px;
+  position: absolute;
+  left: 0;
 }
-.ContainerControlEnfermedades .ContainerTittleEnfermedades .TittleControl {
+.ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
   padding: 2.5rem 2rem 0rem 1rem;
   width: 200px;
   font-size: 1.5rem;
@@ -409,7 +702,7 @@ table {
   font-weight: 700;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
-.ContainerControlEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+.ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
   padding: 0rem 2rem 2.5rem 1rem;
   font-size: 2.5rem;
   color: #5FB15C;
@@ -417,23 +710,146 @@ table {
   font-weight: 700;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
-.ContainerControlEnfermedades .ContainerImagenEnfermedades {
-  margin: 320px 0px 0px 110px;
+.ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
+  width: 90%;
   z-index: 3;
-  width: 100%;
-  padding-bottom: 5rem;
+  margin-top: 150px;
+  margin-left: 70px;
+  right: 0;
 }
-.ContainerControlEnfermedades .ContainerImagenEnfermedades img {
+.ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades .ImgEnfermedades {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerControlEnfermedades {
+    background-image: none;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades {
+    margin: 200px 0px 200px 0px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades {
+    width: 60%;
+    height: 400px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
+    font-size: 2.5rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+    font-size: 4rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
+    width: 70%;
+    z-index: 3;
+    margin-top: 260px;
+    margin-left: 300px;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerControlEnfermedades {
+    background-image: none;
+    justify-content: start;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades {
+    margin: 200px 0px 200px 0px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding-left: 3rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
+    font-size: 3.5rem;
+    width: 500px;
+    padding: 0%;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+    font-size: 6rem;
+    width: 500px;
+    padding: 0%;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
+    width: 60%;
+    z-index: 3;
+    margin-top: 260px;
+    margin-left: 600px;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  .ContainerControlEnfermedades {
+    background-image: none;
+    justify-content: start;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades {
+    margin: 200px 0px 200px 0px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 55%;
+    height: 70%;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
+    font-size: 6rem;
+    margin-left: 2rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+    font-size: 8rem;
+    margin-left: 2rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
+    width: 100%;
+    z-index: 3;
+    margin-top: 400px;
+    margin-left: 1000px;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .ContainerControlEnfermedades {
+    background-image: none;
+    justify-content: start;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades {
+    margin: 200px 0px 200px 0px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 60%;
+    height: 800px;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
+    font-size: 6rem;
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
+    font-size: 8rem;
+    margin-left: 2rem;
+  }
+  .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
+    width: 90%;
+    z-index: 3;
+    margin-top: 400px;
+    margin-left: 1000px;
+    right: 0;
+  }
+}
 .ContainerLogistica {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0rem 0rem 10rem 0rem;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -444,27 +860,33 @@ table {
   background-position: center;
 }
 .ContainerLogistica .ContainerInfoLogistica {
-  background-color: #356E48;
-  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.ContainerLogistica .ContainerInfoLogistica h2 {
+.ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica {
+  background-color: #356E48;
+  padding: 2rem 2rem 8rem 2rem;
+}
+.ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica h2 {
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
-.ContainerLogistica .ContainerInfoLogistica p {
+.ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica p {
   padding: 2rem 0.5rem 2rem 0.5rem;
   font-weight: 300;
 }
-.ContainerLogistica .ContainerInfoLogistica ul {
+.ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul {
   padding: 0.5rem 2rem 0rem 2rem;
   font-weight: 300;
 }
-.ContainerLogistica .ContainerInfoLogistica ul li {
+.ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul li {
   padding-bottom: 1rem;
   list-style-type: disc;
 }
-.ContainerLogistica .ContainerImgLogistica {
+.ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -472,12 +894,109 @@ table {
   position: absolute;
   margin-top: 780px;
 }
-.ContainerLogistica .ContainerImgLogistica img {
+.ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica img {
   width: 100%;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
   margin-bottom: 4rem;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerLogistica {
+    background-image: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerLogistica {
+    background-image: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContainerLogistica .ContainerInfoLogistica {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica {
+    padding: 2rem 1rem 2rem 3rem;
+    width: 60%;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica h2 {
+    font-size: 4rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica p {
+    padding: 2rem 3rem 2rem 0.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul {
+    padding: 0.5rem 5rem 3rem 3rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul li {
+    padding-bottom: 1rem;
+    list-style-type: disc;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica {
+    position: absolute;
+    margin: 0;
+    width: 40%;
+    right: 0;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica img {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ContainerLogistica {
+    background-image: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContainerLogistica .ContainerInfoLogistica {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica {
+    padding: 5rem 1rem 4rem 3rem;
+    width: 60%;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica h2 {
+    font-size: 5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica p {
+    padding: 2rem 6rem 2rem 0.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul {
+    padding: 0.5rem 9rem 3rem 3rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerTextLogistica ul li {
+    padding-bottom: 1rem;
+    list-style-type: disc;
+    font-size: 1.5rem;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica {
+    position: absolute;
+    margin: 0;
+    width: 40%;
+    right: 0;
+  }
+  .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica img {
+    margin: 0;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -508,6 +1027,14 @@ footer .ContainerFooter .ContainerNavbarFooter ul {
   align-items: center;
   gap: 2rem;
 }
+footer .ContainerFooter .ContainerNavbarFooter ul li a {
+  color: #00471A;
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer .ContainerFooter .ContainerNavbarFooter ul li a:hover {
+  color: #FE6600;
+}
 footer .ContainerFooter .ContainerSocialMedia {
   display: flex;
   justify-content: center;
@@ -526,4 +1053,13 @@ footer .ContainerCopy {
 }
 footer .ContainerCopy p {
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  footer .ContainerFooter {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7rem;
+  }
 }/*# sourceMappingURL=style.css.map */

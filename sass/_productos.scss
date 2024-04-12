@@ -56,6 +56,73 @@
                 border-style: none;
                 text-shadow: 0 1px 2px rgba(0, 0, 0, 0.692);
                 box-shadow:0 3px 3px rgba(0, 0, 0, 0.575); ;
+                transition: all 0.3s ease 0s;
+            }
+
+            a .ButtonVerProductos:hover{
+                background-color: white;
+                color: $colorverdealternativo;
+                transform: translateY(-7px);
+                
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+    .ContainerProductos{
+
+        .ContainerTittleProductos{
+            font-size: 3.5rem;
+        }
+
+        .ContaineProductosDestacados{
+
+            .ContainerImgProducts{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 4rem;
+
+                .ImgProducts{
+                    width: 90px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1400px){
+    .ContainerProductos{
+
+        .ContainerTittleProductos{
+            font-size: 4.5rem;
+            padding-bottom: 5rem;
+        }
+
+        .ContaineProductosDestacados{
+
+            .ContainerImgProducts{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 4rem;
+
+                .ImgProducts{
+                    width: 130px;
+                    height: auto;
+                }
+            }
+            .ContainerButtonVerProductos{
+                padding-top: 3rem;
+                a .ButtonVerProductos{
+                    
+                    font-size: 1.3rem;
+                    padding: 1rem 1.5rem 1rem 1.5rem ;
+                    border-radius: 40px;
+                }
+    
+                
             }
         }
     }

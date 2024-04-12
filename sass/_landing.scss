@@ -17,6 +17,7 @@
         font-family: $font;
         color: white;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        
         h1{
             display: none;
         }
@@ -31,31 +32,37 @@
             letter-spacing: 1px;
             line-height: 1.2; 
         }
-        
-        .BrandLanding{
-            width: 250px;
-            height: auto;
-            padding-bottom: 3rem;
-            filter: drop-shadow(0 1px  2px rgba(0, 0, 0, 0.582));
-            z-index: 1;
-            position: relative;
+        .ContainerImgBrand{
+
+            .BrandLanding{
+                width: 250px;
+                height: auto;
+                padding-bottom: 3rem;
+                filter: drop-shadow(0 1px  2px rgba(0, 0, 0, 0.582));
+                z-index: 1;
+                position: relative;
+            }
         }
+       
     }
     
     .ContainerButtonDown{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
-       .ButtonDown{
-        background-color: transparent;
-        border: none;
-        .ImgBtnDown {
-            animation: moveUpDown 2s ease-in-out infinite;
-            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8)); // Aquí agregamos el drop shadow suave al SVG
+        margin-bottom: 3rem;
+        position: absolute;
+        bottom: 0;
+        
+        .ButtonDown{
+            background-color: transparent;
+            border: none;
 
+            .ImgBtnDown {
+                animation: moveUpDown 2s ease-in-out infinite;
+                filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8)); 
+            }
         }
-       }
     }
 
 }
@@ -67,4 +74,165 @@
     50% {
         transform: translateY(20px);
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .ContainerLanding{
+        background-image: none;
+        .ContainerBrand{
+            flex-direction: row-reverse;
+            .ContainerSecondTittle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    position: absolute;
+                    left: 0;
+                    width: 30%;
+                    background-color: #00471ae3;
+                    padding: 3rem;
+                    text-align: start;
+                    filter: drop-shadow(0 1px  2px rgba(0, 0, 0, 0.582));
+                    span{
+                        font-size: 4.4rem;
+                    }
+                }
+            }
+           
+            .ContainerImgBrand{
+                position: absolute;
+                right: 0;
+                width: 90%;
+                display: flex;
+                justify-content: end;
+                background-image: url(../img/portada\ 3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 85vh;
+                filter: drop-shadow(0 1px  2px rgba(0, 0, 0, 0.582));
+
+
+                .BrandLanding{
+                    width: 300px;
+                    height: auto;
+                    margin-right: 2rem;                    
+                }
+
+            }
+            
+
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+
+    .ContainerLanding{
+        background-image: none;
+        .ContainerBrand{
+            flex-direction: row-reverse;
+            .ContainerSecondTittle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                background-color: #00471ae3;
+                position: absolute;
+                left: 0;
+                padding: 4rem;
+                .SecondTittle{
+                    font-size: 2.5rem;
+                    width: auto;
+                    text-align: start;
+                    
+                    span{
+                        font-size: 6rem;
+                    }
+                }
+            }
+           
+            .ContainerImgBrand{
+                position: absolute;
+                right: 0;
+                width: 90%;
+                display: flex;
+                justify-content: end;
+                background-image: url(../img/portada\ 3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 85vh;
+                
+
+                .BrandLanding{
+                    width: 400px;
+                    height: auto;
+                    margin-right: 2rem;                    
+                }
+
+            }
+            
+
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px){
+
+    .ContainerLanding{
+        background-image: none;
+        .ContainerBrand{
+            flex-direction: row-reverse;
+            .ContainerSecondTittle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                background-color: #00471ae3;
+                position: absolute;
+                left: 0;
+                padding: 4rem;
+                
+                .SecondTittle{
+                    font-size: 2.5rem;
+                    width: auto;
+                    text-align: start;
+                    
+                    span{
+                        font-size: 6rem;
+                    }
+                }
+            }
+           
+            .ContainerImgBrand{
+                position: absolute;
+                right: 0;
+                width: 90%;
+                display: flex;
+                justify-content: end;
+                background-image: url(../img/portada\ 3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 85vh;
+                
+
+                .BrandLanding{
+                    width: 500px;
+                    height: auto;
+                    margin-right: 5rem;                    
+                }
+
+            }
+            
+
+        }
+    }
+
+
 }

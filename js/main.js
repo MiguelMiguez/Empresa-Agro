@@ -3,6 +3,9 @@ var lineone = document.getElementById('lineone')
 var linetwo = document.getElementById('linetwo')
 var linethree = document.getElementById('linethree')
 var menu = document.getElementById('menu')
+let mision = document.getElementById('mision')
+let buttondown = document.getElementById ('buttondown')
+
 
 button.addEventListener('click', toggleMenu)
 
@@ -24,6 +27,15 @@ function toggleMenu(){
 }
 
 
+document.addEventListener("DOMContentLoaded", function(){
+    buttondown.addEventListener('click', function(){
+        let targetElement = document.getElementById ("mision");
+        targetElement.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+
+});
 
 
 
