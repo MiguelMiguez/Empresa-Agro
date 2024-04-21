@@ -1,0 +1,73 @@
+.ContainerAllInsumos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../img/SEEDS\ CHICAS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0rem;
+    .ContainerInsumos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        width: 150px ;
+        height: 150px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 1rem;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+
+        a{text-decoration: none;}
+        
+        .TittleInsumos{
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+            font-weight: 700;
+            margin: 0;
+        }
+
+    }
+
+    .ContainerInsumos:hover{
+        transform: translatey(-10px) ;
+    }
+
+    > .coadyuvantes {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/20240127_183446.jpg);
+    } 
+
+    > .herbicidas {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/descarga.jpg);
+    } 
+
+    > .insecticida {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/fot-1-nawoz.JPG);
+    } 
+
+    > .fungicidas {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/importancia-fungicidas.jpg);
+    } 
+
+    > .terapicos {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/terapicos-rizoderma.jpg);
+    } 
+
+    > .fertilizantes {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/jacto_jactomexico_image_563\ 1.png);
+    } 
+
+    > .semillas {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/image.jpg);
+    } 
+
+    > .foliares {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/descarga\ \(1\).jpg);
+    } 
+}   

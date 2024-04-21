@@ -1,0 +1,17 @@
+.ContainerBanner{
+    .ContainerFlayerDesktop{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+   .ContainerBanner{
+    .ContainerFlayerMobile{
+        display: none !important;
+    }
+    .ContainerFlayerDesktop{
+        display: block !important;
+        height: 60vh;
+    }
+  }
+}

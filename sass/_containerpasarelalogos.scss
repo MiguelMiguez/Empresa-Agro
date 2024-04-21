@@ -1,0 +1,47 @@
+.ContainerPasarelaLogos{
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  background-color: #dfdfdfe1;
+
+  .LogoGallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    animation: 35s slide infinite linear;
+    .LogoPasarela{
+      width: 150px;
+      height: auto;
+    }
+  }
+
+}
+.ContainerPsasarelaLogos:before,
+.ContainerPsasarelaLogos:after{
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.ContainerPsasarelaLogosd:before{
+  left: 0;
+}
+
+.ContainerPsasarelaLogos{
+  right: 0;
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
