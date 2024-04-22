@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
-
+let copy = document.querySelector(".LogoGallery").cloneNode(true);
+document.querySelector(".ContainerPasarelaLogos").appendChild(copy);
 
 

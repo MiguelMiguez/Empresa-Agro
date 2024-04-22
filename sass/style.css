@@ -1030,6 +1030,7 @@ footer .ContainerFooter .ContainerNavbarFooter ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
 }
 footer .ContainerFooter .ContainerNavbarFooter ul li a {
   color: #00471A;
@@ -1071,22 +1072,22 @@ footer .ContainerCopy p {
   display: none !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .ContainerBanner .ContainerFlayerMobile {
     display: none !important;
   }
   .ContainerBanner .ContainerFlayerDesktop {
     display: block !important;
-    height: 60vh;
   }
 }
 .ContainerPasarelaLogos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 40px 0;
   position: relative;
   display: flex;
   gap: 2rem;
-  background-color: rgba(223, 223, 223, 0.8823529412);
+  background-color: #ffffff;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 .ContainerPasarelaLogos .LogoGallery {
   display: flex;
@@ -1125,6 +1126,15 @@ footer .ContainerCopy p {
     transform: translateX(-100%);
   }
 }
+@media only screen and (min-width: 1400px) {
+  .ContainerPasarelaLogos {
+    padding: 10px 0;
+  }
+  .ContainerPasarelaLogos .LogoGallery .LogoPasarela {
+    width: 200px;
+    height: auto;
+  }
+}
 .ContainerAllInsumos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1134,7 +1144,8 @@ footer .ContainerCopy p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem 0rem;
+  padding: 4rem 1rem;
+  gap: 2rem;
 }
 .ContainerAllInsumos .ContainerInsumos {
   display: flex;
@@ -1150,6 +1161,7 @@ footer .ContainerCopy p {
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 .ContainerAllInsumos .ContainerInsumos a {
   text-decoration: none;
@@ -1160,9 +1172,11 @@ footer .ContainerCopy p {
   color: white;
   font-weight: 700;
   margin: 0;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
 .ContainerAllInsumos .ContainerInsumos:hover {
   transform: translatey(-10px);
+  filter: drop-shadow(0 2px 5px #356E48);
 }
 .ContainerAllInsumos > .coadyuvantes {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/20240127_183446.jpg);
@@ -1187,4 +1201,52 @@ footer .ContainerCopy p {
 }
 .ContainerAllInsumos > .foliares {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/insumos/descarga\ \(1\).jpg);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerAllInsumos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 4rem 2rem;
+    background-image: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerAllInsumos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 4rem;
+    background-image: none;
+  }
+  .ContainerAllInsumos .ContainerInsumos {
+    width: 200px;
+    height: 200px;
+  }
+  .ContainerAllInsumos .ContainerInsumos .TittleInsumos {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ContainerAllInsumos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0rem;
+    padding: 100px 200px;
+    background-image: none;
+    gap: 2rem;
+  }
+  .ContainerAllInsumos .ContainerInsumos {
+    width: 250px;
+    height: 250px;
+  }
+  .ContainerAllInsumos .ContainerInsumos .TittleInsumos {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
