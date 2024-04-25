@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "nombre": "COADYUVANTES",
+        "imagenes": [
+            "../img/brand/fmc-2.svg",
+            "../img/brand/fmc-2.svg",
+            "../img/brand/fmc-2.svg"
+        ],
+        "descripcion": "Descripción del producto"
+    },
+    {
+        "id": "2",
+        "nombre": "HERBICIDA",
+        "imagenes": [
+            "ruta/a/la/imagen1.jpg",
+            "ruta/a/la/imagen2.jpg"
+        ],
+        "descripcion": "Descripción del producto"
+    }
+]
