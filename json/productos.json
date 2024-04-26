@@ -1,0 +1,18 @@
+[   {
+        "id": "1",
+        "nombre": "COADYUVANTES",
+        "imagenes": [
+            "../img/brand/image.jpg",
+            "../img/brand/image.jpg",
+            "../img/brand/image.jpg"
+        ],
+        "descripcion": "Descripción del producto"
+    },
+    {
+        "id": "2",
+        "nombre": "HERBICIDA",
+        "imagen": "ruta/a/la/imagen.jpg",
+        "descripcion": "Descripción del producto"
+    }
+
+]
