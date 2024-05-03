@@ -48,178 +48,6 @@ table {
   border-spacing: 0;
 }
 
-.containerNavbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-  background-color: white;
-}
-.containerNavbar .buttonToggleMenu {
-  position: relative;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
-}
-.containerNavbar .buttonToggleMenu .line {
-  width: 70%;
-  height: 3px;
-  background-color: #00471A;
-  border-radius: 20px;
-}
-.containerNavbar .containerLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: auto;
-}
-.containerNavbar .containerLogo a .BrandNavbar {
-  width: 60px;
-  height: auto;
-}
-.containerNavbar .containerMenuLaptop {
-  display: none;
-}
-
-.containerMenuHidden {
-  position: fixed;
-  top: 0;
-  right: -300px;
-  width: 200px;
-  height: 100%;
-  background-color: #00471A;
-  color: #fff;
-  transition: right 0.3s ease;
-  padding: 20px;
-  z-index: 999;
-}
-.containerMenuHidden .menuHidden {
-  margin-top: 80px;
-}
-.containerMenuHidden .menuHidden li {
-  margin-bottom: 20px;
-}
-.containerMenuHidden .menuHidden li a {
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-}
-
-.opened {
-  right: 0;
-}
-
-.closed {
-  right: -300px;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .containerNavbar {
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-  }
-  .containerNavbar .buttonToggleMenu {
-    display: none;
-  }
-  .containerNavbar .containerMenuLaptop {
-    display: contents;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    color: #00471A;
-    font-size: 1.2rem;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
-    border-bottom: 1px solid #FE6600;
-  }
-  .containerMenuHidden {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .containerNavbar {
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    z-index: 999;
-  }
-  .containerNavbar .buttonToggleMenu {
-    display: none;
-  }
-  .containerNavbar .containerLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .containerNavbar .containerMenuLaptop {
-    display: contents;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    padding-left: 5rem;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li {
-    position: relative;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a {
-    text-decoration: none;
-    color: #00471A;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
-    padding-bottom: 5px;
-    text-shadow: 0 1px 1px rgba(0, 71, 26, 0.2470588235);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-transform: uppercase;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: transparent;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
-    color: #FE6600;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover::after {
-    background-color: #FE6600;
-    transform: scaleX(1);
-  }
-}
-.menuLaptop {
-  margin: 0;
-}
-
 .ContainerLanding {
   display: flex;
   flex-direction: column;
@@ -1384,5 +1212,239 @@ footer .ContainerCopy p {
   }
   .ContainerCategoria .ContainerFormCateogria form .ContainerTittleForm h2 {
     font-size: 4rem;
+  }
+}
+.ContainerSemillas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ContainerSemillas .TipoSemilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: #356E48;
+}
+.ContainerSemillas .TipoSemilla .InfoSemillas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.ContainerSemillas .TipoSemilla .InfoSemillas h2 {
+  color: #356E48;
+  font-weight: 700;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.ContainerSemillas .TipoSemilla .InfoSemillas ul {
+  padding: 0;
+}
+.ContainerSemillas .TipoSemilla .InfoSemillas ul li {
+  padding: 1rem;
+}
+.ContainerSemillas .TipoSemilla .ImgSemillas {
+  padding: 2rem;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+}
+.ContainerSemillas .TipoSemilla .ImgSemillas img {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  width: 300px;
+  height: auto;
+}
+.ContainerSemillas .TipoSemillaRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #356E48;
+  color: white;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  width: 100%;
+}
+.ContainerSemillas .TipoSemillaRight .InfoSemillas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+.ContainerSemillas .TipoSemillaRight .InfoSemillas h2 {
+  font-weight: 700;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.ContainerSemillas .TipoSemillaRight .InfoSemillas ul {
+  padding: 0;
+}
+.ContainerSemillas .TipoSemillaRight .InfoSemillas ul li {
+  padding: 1rem;
+}
+.ContainerSemillas .TipoSemillaRight .ImgSemillas {
+  padding: 2rem;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+}
+.ContainerSemillas .TipoSemillaRight .ImgSemillas img {
+  border-radius: 10px;
+  border: 1px solid rgba(248, 248, 248, 0.479);
+  width: 300px;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ContainerSemillas .TipoSemilla {
+    flex-direction: row;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 50vh;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas h2 {
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul li {
+    padding: 0.5rem 0.2rem;
+  }
+  .ContainerSemillas .TipoSemillaRight {
+    flex-direction: row-reverse;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 50vh;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas h2 {
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul li {
+    padding: 0.5rem 0.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .ContainerSemillas .TipoSemilla {
+    flex-direction: row;
+    padding: 0px 200px;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 70vh;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas h2 {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul li {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .ContainerSemillas .TipoSemilla .ImgSemillas img {
+    width: 400px;
+    height: auto;
+  }
+  .ContainerSemillas .TipoSemillaRight {
+    flex-direction: row-reverse;
+    padding: 0px 200px;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 70vh;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas h2 {
+    font-size: 3rem;
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul li {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .ContainerSemillas .TipoSemillaRight .ImgSemillas {
+    padding: 3rem;
+  }
+  .ContainerSemillas .TipoSemillaRight .ImgSemillas img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ContainerSemillas .TipoSemilla {
+    flex-direction: row;
+    padding: 0px 350px;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 70vh;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas h2 {
+    font-size: 4rem;
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemilla .InfoSemillas ul li {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .ContainerSemillas .TipoSemilla .ImgSemillas img {
+    width: 450px;
+    height: auto;
+  }
+  .ContainerSemillas .TipoSemillaRight {
+    flex-direction: row-reverse;
+    padding: 0px 350px;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas {
+    text-align: start;
+    padding: 50px 0px;
+    min-height: 70vh;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas h2 {
+    font-size: 4rem;
+    padding: 0;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul {
+    padding-left: 2rem;
+    list-style: disc;
+  }
+  .ContainerSemillas .TipoSemillaRight .InfoSemillas ul li {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .ContainerSemillas .TipoSemillaRight .ImgSemillas {
+    padding: 3rem;
+  }
+  .ContainerSemillas .TipoSemillaRight .ImgSemillas img {
+    width: 450px;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
