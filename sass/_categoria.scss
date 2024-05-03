@@ -21,11 +21,16 @@
     }
     .ContainerTextoCategoria{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
         text-align: center;
         font-family: $font;
+        
+        .TextoCategoria{
+            padding: 2rem 1.2rem;
+            font-size: 1.3rem;
+        }
     }
 
     .ContainerFormCateogria{
@@ -115,11 +120,11 @@
             }
         }
         .ContainerTextoCategoria{
-
-            margin: 40px 50px;
-            p{
+            .TextoCategoria{
+                padding: 2rem 1.2rem;
                 font-size: 1.5rem;
             }
+            
         }
 
         .ContainerFormCateogria{
@@ -144,11 +149,11 @@
             }
         }
         .ContainerTextoCategoria{
-
-            margin: 40px 100px;
-            p{
-                font-size: 1.5rem;
+            .TextoCategoria{
+                padding: 50px 200px;
+                font-size: 2rem;
             }
+            
         }
 
         .ContainerFormCateogria{
