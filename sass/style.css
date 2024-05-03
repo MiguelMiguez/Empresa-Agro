@@ -1274,11 +1274,15 @@ footer .ContainerCopy p {
 }
 .ContainerCategoria .ContainerTextoCategoria {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+.ContainerCategoria .ContainerTextoCategoria .TextoCategoria {
+  padding: 2rem 1.2rem;
+  font-size: 1.3rem;
 }
 .ContainerCategoria .ContainerFormCateogria {
   display: flex;
@@ -1351,10 +1355,8 @@ footer .ContainerCopy p {
   .ContainerCategoria .TittleCategoria h2 {
     font-size: 3.5rem;
   }
-  .ContainerCategoria .ContainerTextoCategoria {
-    margin: 40px 50px;
-  }
-  .ContainerCategoria .ContainerTextoCategoria p {
+  .ContainerCategoria .ContainerTextoCategoria .TextoCategoria {
+    padding: 2rem 1.2rem;
     font-size: 1.5rem;
   }
   .ContainerCategoria .ContainerFormCateogria form .ContainerTittleForm h2 {
@@ -1365,11 +1367,9 @@ footer .ContainerCopy p {
   .ContainerCategoria .TittleCategoria h2 {
     font-size: 6rem;
   }
-  .ContainerCategoria .ContainerTextoCategoria {
-    margin: 40px 100px;
-  }
-  .ContainerCategoria .ContainerTextoCategoria p {
-    font-size: 1.5rem;
+  .ContainerCategoria .ContainerTextoCategoria .TextoCategoria {
+    padding: 50px 200px;
+    font-size: 2rem;
   }
   .ContainerCategoria .ContainerFormCateogria form .ContainerFormGroup .FormGroup input {
     width: 400px;
