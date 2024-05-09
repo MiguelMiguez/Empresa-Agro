@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -31,6 +32,8 @@ body {
 
 ol, ul {
   list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 blockquote, q {
@@ -50,176 +53,148 @@ table {
 
 .containerNavbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
   background-color: white;
+  padding: 1rem;
 }
-.containerNavbar .buttonToggleMenu {
-  position: relative;
-  z-index: 9999;
+.containerNavbar .containerLogoNavbar {
+  width: 64px;
+  height: 64px;
+}
+.containerNavbar .containerListNavbar {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 90%;
+  padding-left: 0;
+  margin-bottom: 0;
 }
-.containerNavbar .buttonToggleMenu .line {
-  width: 70%;
-  height: 3px;
-  background-color: #00471A;
-  border-radius: 20px;
+.containerNavbar .containerListNavbar .listNavbar {
+  display: none;
+  position: relative;
 }
-.containerNavbar .containerLogo {
+.containerNavbar .containerListNavbar .listNavbar a {
+  text-decoration: none;
+  color: #00471A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 1px rgba(0, 71, 26, 0.2470588235);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-transform: uppercase;
+}
+.containerNavbar .containerListNavbar .listNavbar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: transparent;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.containerNavbar .containerListNavbar .listNavbar a:hover {
+  color: #FE6600;
+}
+.containerNavbar .containerListNavbar .listNavbar a:hover::after {
+  background-color: #FE6600;
+  transform: scaleX(1);
+}
+.containerNavbar .containerListNavbar .buttonToggleMenu {
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: auto;
+  padding: 1.2rem 1rem 1.2rem 1rem;
 }
-.containerNavbar .containerLogo a .BrandNavbar {
-  width: 60px;
-  height: auto;
+.containerNavbar .containerListNavbar .buttonToggleMenu .containerLines {
+  width: 35px;
+  height: 30px;
+  position: relative;
 }
-.containerNavbar .containerMenuLaptop {
-  display: none;
+.containerNavbar .containerListNavbar .buttonToggleMenu .lineone, .containerNavbar .containerListNavbar .buttonToggleMenu .linetwo, .containerNavbar .containerListNavbar .buttonToggleMenu .linethree {
+  width: 100%;
+  height: 2px;
+  background-color: orangered;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+.containerNavbar .containerListNavbar .buttonToggleMenu .linetwo {
+  top: 50%;
+}
+.containerNavbar .containerListNavbar .buttonToggleMenu .linethree {
+  top: 100%;
 }
 
-.containerMenuHidden {
+.elMenuHamburguesa {
+  background-color: #00471A;
   position: fixed;
   top: 0;
-  right: -300px;
-  width: 200px;
-  height: 100%;
-  background-color: #00471A;
-  color: #fff;
-  transition: right 0.3s ease;
-  padding: 20px;
-  z-index: 999;
-}
-.containerMenuHidden .menuHidden {
-  margin-top: 80px;
-}
-.containerMenuHidden .menuHidden li {
-  margin-bottom: 20px;
-}
-.containerMenuHidden .menuHidden li a {
+  bottom: 0;
+  right: -524px;
+  transition: 0.5s;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 100px 1rem 3rem 2rem;
+  font-size: 24px;
   font-family: "Montserrat", sans-serif;
+  max-width: 320px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+.elMenuHamburguesa .containerListMenuHamburguesa {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.elMenuHamburguesa .containerListMenuHamburguesa li {
+  padding: 1rem 1rem 2rem 1rem;
+}
+.elMenuHamburguesa .containerListMenuHamburguesa li a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
-  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.elMenuHamburguesa .containerListMenuHamburguesa li a:hover {
+  color: #FE6600;
 }
 
 .opened {
   right: 0;
 }
 
-.closed {
-  right: -300px;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+/*esto es un media querie solo del NAVBAR*/
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
   .containerNavbar {
-    justify-content: center;
-    align-items: center;
-    height: 120px;
+    justify-content: space-around;
   }
-  .containerNavbar .buttonToggleMenu {
-    display: none;
+  .containerNavbar .containerListNavbar {
+    justify-content: space-around;
   }
-  .containerNavbar .containerMenuLaptop {
-    display: contents;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    color: #00471A;
-    font-size: 1.2rem;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
-    border-bottom: 1px solid #FE6600;
-  }
-  .containerMenuHidden {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .containerNavbar {
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    z-index: 999;
-  }
-  .containerNavbar .buttonToggleMenu {
-    display: none;
-  }
-  .containerNavbar .containerLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .containerNavbar .containerMenuLaptop {
-    display: contents;
-    width: 100%;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    padding-left: 5rem;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li {
+  .containerNavbar .containerListNavbar .listNavbar {
+    display: block;
     position: relative;
   }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a {
-    text-decoration: none;
-    color: #00471A;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
-    padding-bottom: 5px;
-    text-shadow: 0 1px 1px rgba(0, 71, 26, 0.2470588235);
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-transform: uppercase;
+  .containerNavbar .containerListNavbar .buttonToggleMenu {
+    display: none;
   }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: transparent;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover {
-    color: #FE6600;
-  }
-  .containerNavbar .containerMenuLaptop .menuLaptop li a:hover::after {
-    background-color: #FE6600;
-    transform: scaleX(1);
+  .elMenuHamburguesa {
+    display: none;
   }
 }
-.menuLaptop {
-  margin: 0;
-}
-
 .ContainerLanding {
   display: flex;
   flex-direction: column;
@@ -274,8 +249,13 @@ table {
   border: none;
 }
 .ContainerLanding .ContainerButtonDown .ButtonDown .ImgBtnDown {
+  width: 45px;
   animation: moveUpDown 2s ease-in-out infinite;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+  transition: 0.5s;
+}
+.ContainerLanding .ContainerButtonDown .ButtonDown .ImgBtnDown:hover {
+  width: 55px;
 }
 
 @keyframes moveUpDown {
@@ -308,7 +288,7 @@ table {
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.582));
   }
   .ContainerLanding .ContainerBrand .ContainerSecondTittle h2 span {
-    font-size: 4.4rem;
+    font-size: 3rem;
   }
   .ContainerLanding .ContainerBrand .ContainerImgBrand {
     position: absolute;
@@ -994,7 +974,7 @@ table {
   .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica {
     position: absolute;
     margin: 0;
-    width: 40%;
+    width: 45%;
     right: 0;
   }
   .ContainerLogistica .ContainerInfoLogistica .ContainerImgLogistica img {
@@ -1083,7 +1063,7 @@ footer .ContainerCopy p {
 }
 .ContainerPasarelaLogos {
   overflow: hidden;
-  padding: 40px 0;
+  padding: 10px 0;
   position: relative;
   display: flex;
   gap: 2rem;
@@ -1095,7 +1075,8 @@ footer .ContainerCopy p {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  animation: 35s slide infinite linear;
+  animation: 100s slide infinite linear;
+  height: 120px;
 }
 .ContainerPasarelaLogos .LogoGallery .LogoPasarela {
   width: 150px;
@@ -1129,10 +1110,14 @@ footer .ContainerCopy p {
 }
 @media only screen and (min-width: 1400px) {
   .ContainerPasarelaLogos {
+    width: 100%;
     padding: 10px 0;
   }
+  .ContainerPasarelaLogos .LogoGallery {
+    height: 120px;
+  }
   .ContainerPasarelaLogos .LogoGallery .LogoPasarela {
-    width: 200px;
+    width: 120px;
     height: auto;
   }
 }
@@ -1619,4 +1604,9 @@ footer .ContainerCopy p {
     width: 450px;
     height: auto;
   }
+}
+ol, ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -12,19 +12,49 @@
     <title>Campo Fertil</title>
 </head>
 <body>
+  <nav class="containerNavbar">
+    <img src="../img/Brand CampoFertil.svg" alt="Campo Fértil" class="containerLogoNavbar">
+    <ul class="containerListNavbar">
+        <li class="listNavbar"><a href="../index.html">INICIO</a></li>
+        <li class="listNavbar"><a href="">INSUMOS</a></li>
+        <li class="listNavbar"><a href="">ACOPIO</a></li>
+        <li class="listNavbar"><a href="">LOGISTICA</a></li>
+        <li class="listNavbar"><a href="">AGRICULTURA</a></li>
+        <li class="listNavbar"><a href="">NOSOTROS</a></li>
+        <li class="listNavbar"><a href="">CONTACTO</a></li>
+        <div class="buttonToggleMenu" id="buttonToggleMenu">
+            <div class="containerLines">
+                <div class="lineone" id="lineone"></div>
+                <div class="linetwo" id="linetwo"></div>
+                <div class="linethree" id="linethree"></div>
+            </div>
+        </div>
+    </ul>
+</nav>
+<nav class="elMenuHamburguesa" id="menuHamburguesa">
+    <ul class="containerListMenuHamburguesa">
+        <li><a href="">INICIO</a></li>
+        <li><a href="">INSUMOS</a></li>
+        <li><a href="">ACOPIO</a></li>
+        <li><a href="">LOGISTICA</a></li>
+        <li><a href="">AGRICULTURA</a></li>
+        <li><a href="">NOSOTROS</a></li>
+        <li><a href="">CONTACTO</a></li>
+    </ul>
+</nav>
     <div class="ContainerAll">
         <div class="ContainerBanner">
             <div class="ContainerFlayerMobile">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="../img/baner mobile 1.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner mobile 1.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                       <div class="carousel-item">
-                        <img src="../img/baner mobile 2.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner mobile 2.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                       <div class="carousel-item">
-                        <img src="../img/baner mobile 3.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner mobile 3.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                     </div>
                   </div>
@@ -33,13 +63,13 @@
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="../img/baner desktop 1.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner desktop 1.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                       <div class="carousel-item">
-                        <img src="../img/baner desktop 2.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner desktop 2.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                       <div class="carousel-item">
-                        <img src="../img/baner desktop 3.jpg" class="d-block w-100" alt="...">
+                        <img src="../img/baner desktop 3.jpg" class="d-block w-100" alt="banner insumos">
                       </div>
                     </div>
                   </div>
@@ -47,15 +77,23 @@
         </div>
         <div class="ContainerPasarelaLogos">
             <div class="LogoGallery">
-                  <img class="LogoPasarela" src="../img/brand/bayer-logo-38E8F61A58-seeklogo.com.jpg" alt="">
-                  <img class="LogoPasarela" src="../img/brand/fmc-2.svg" alt="">
-                  <img class="LogoPasarela" src="../img/brand/image.jpg" alt="">
-                  <img class="LogoPasarela" src="../img/brand/logo-atanor_Mesa-de-trabajo-1.png" alt="">
-                  <img class="LogoPasarela" src="../img/brand/Logo-Spraytec-Vertical-PNG.png" alt="">
-                  <img class="LogoPasarela" src="../img/brand/peyte-logo.svg" alt="">
-                  <img class="LogoPasarela" src="../img/brand/SpeedAgro_logo.svg.png" alt="">
+                  <img class="LogoPasarela" src="../img/brand/bayer.jpg" alt="bayer">
+                  <img class="LogoPasarela" src="../img/brand/fmc.svg" alt="fmc">
+                  <img class="LogoPasarela" src="../img/brand/alz.png" alt="alz">
+                  <img class="LogoPasarela" src="../img/brand/amauta.png" alt="amauta">
+                  <img class="LogoPasarela" src="../img/brand/atanor.svg" alt="atanor">
+                  <img class="LogoPasarela" src="../img/brand/desger.webp" alt="degser">
+                  <img class="LogoPasarela" src="../img/brand/dva.svg" alt="dva">
+                  <img class="LogoPasarela" src="../img/brand/latijereta.svg" alt="latijereta">
+                  <img class="LogoPasarela" src="../img/brand/nord.png" alt="nord">
+                  <img class="LogoPasarela" src="../img/brand/nova.png" alt="nova">
+                  <img class="LogoPasarela" src="../img/brand/peyte.png" alt="peyte">
+                  <img class="LogoPasarela" src="../img/brand/rizobacter.png" alt="rizobacter">
+                  <img class="LogoPasarela" src="../img/brand/ruralco.png" alt="ruralco">
+                  <img class="LogoPasarela" src="../img/brand/speedagro.png" alt="speedagro">
+                  <img class="LogoPasarela" src="../img/brand/spraytec.png" alt="spraytec">
+                  <img class="LogoPasarela" src="../img/brand/surcos.png" alt="surcos">
             </div>
-            
         </div>
         <div class="ContainerAllInsumos">
             <div class="ContainerInsumos coadyuvantes"><a href="../pages/coadyuvantes.html"><h2  class="TittleInsumos">COADYUVANTES</h2></a></div>
@@ -80,9 +118,9 @@
                   </ul>
               </div>
               <div class="ContainerSocialMedia">
-                  <a href=""><img src="../img/facebook.svg" alt=""></a>
-                  <a href=""><img src="../img/instagram.svg" alt=""></a>
-                  <a href=""><img src="../img/linkedin.svg" alt=""></a>
+                  <a href=""><img src="../img/facebook.svg" alt="facebook"></a>
+                  <a href=""><img src="../img/instagram.svg" alt="instagram"></a>
+                  <a href=""><img src="../img/linkedin.svg" alt="linkedin"></a>
               </div>
           </div>
           

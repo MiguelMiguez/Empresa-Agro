@@ -1,185 +1,150 @@
 .containerNavbar{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100px;
     background-color: white;
-
-    .buttonToggleMenu{
-        position: relative;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-        .line{
-            width: 70%;
-            height: 3px;
-            background-color: #00471A;
-            border-radius: 20px;
-        }
+    padding: 1rem;
+    .containerLogoNavbar{
+        width: 64px;
+        height: 64px;
     }
-    .containerLogo{
+    .containerListNavbar{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
-        width: 90px;
-        height: auto;
-        a{
-            .BrandNavbar{
-                width: 60px;
-                height: auto;
+        font-family: $font;
+        font-size: 20px;
+        width: 90%;
+        padding-left: 0;
+        margin-bottom: 0;
+        
+        .listNavbar{
+            display: none;
+            position: relative; 
+            a{
+                text-decoration: none;
+                color: #00471A;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.1rem;
+                padding-bottom: 5px;
+                text-shadow: 0 1px 1px #00471a3f;
+                transition: color 0.3s ease, text-shadow 0.3s ease; 
+                text-transform: uppercase;
+                &::after { 
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: transparent;
+                    transform: scaleX(0);
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    color: $colornaranja;
+                    
+
+                    &::after { 
+                        background-color: $colornaranja;
+                        transform: scaleX(1);
+                    }
+                }
             }
         }
-        
-    }
-    .containerMenuLaptop{
-        display: none;
+        .buttonToggleMenu{
+            width: 64px;
+            height: 64px;
+            z-index: 9999;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.2rem 1rem 1.2rem 1rem;
+            .containerLines{
+                width: 35px;
+                height: 30px;
+                position: relative;
+                
+            }
+                .lineone, .linetwo, .linethree{
+                    width: 100%;
+                    height: 2px;
+                    background-color: orangered;
+                    position: absolute;
+                    top: 0;
+                    transition: 0.5s;
+                    
+                }
+                .linetwo{
+                    top: 50%;
+                }
+                .linethree{
+                    top: 100%;
+                }
+        }
     }
 }
 
- .containerMenuHidden{
-  position: fixed;
-  top: 0;
-  right: -300px; 
-  width: 200px;
-  height: 100%;
-  background-color: #00471A;
-  color: #fff;
-  transition: right 0.3s ease;
-  padding: 20px;
-  z-index: 999;
-  .menuHidden{
-    margin-top: 80px;
-    li{
-        margin-bottom: 20px;
-        a{
-            font-family: $font;
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-            text-shadow: 0 4px 2px rgba(0,0,0,0.1);
-            text-transform: uppercase;
+.elMenuHamburguesa{
+    background-color: $colorverde;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -524px;
+    transition: 0.5s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 100px 1rem 3rem 2rem;
+    font-size: 24px;
+    font-family: $font;
+    max-width: 320px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    z-index: 9998;
+    .containerListMenuHamburguesa{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        li{
+            padding: 1rem 1rem 2rem 1rem;
+            a{
+                text-decoration: none;
+                color: white;
+                text-shadow: 0 0 5px rgba(0,0,0,0.8);
+                transition: 0.5s;
+            }
+            a:hover{
+                color: $colornaranja;
+            }
         }
     }
-  }
 }
 
 .opened{
     right: 0;
 }
 
-.closed{
-    right: -300px;
-}
 
-@media screen and (min-width: 1024px) and (max-width: 1200px){
+/*esto es un media querie solo del NAVBAR*/
+@media only screen and (min-width: 1024px) and (max-width: 1920px ){
     .containerNavbar{
-        justify-content: center;
-        align-items: center;
-        height: 120px;
-        .buttonToggleMenu{
-            display: none;
-        }
-        .containerMenuLaptop{
-            display: contents;
-            width: 100%;
-            .menuLaptop{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 100%;
-                li{
-                    a{
-                        font-family: $font;
-                        text-decoration: none;
-                        color: #00471A;
-                        font-size: 1.2rem;
-                        text-shadow: 0 2px 2px rgba(0,0,0,0.2);
-                        text-transform: uppercase;
-                    }
-                    a:hover{
-                        border-bottom: 1px solid #FE6600;
-                    }
-                }
+        justify-content: space-around;
+        .containerListNavbar{
+            justify-content: space-around;
+            .listNavbar{
+                display: block;
+                position: relative;
+            }
+            .buttonToggleMenu{
+                display: none;
             }
         }
     }
-    .containerMenuHidden{
+    .elMenuHamburguesa{
         display: none;
     }
-}
-
-@media screen and (min-width: 1200px) {
-    .containerNavbar{
-        justify-content: center;
-        align-items: center;
-        height: 120px;
-        z-index: 999;
-        
-        
-        .buttonToggleMenu{
-            display: none;
-        }
-        .containerLogo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .containerMenuLaptop{
-            display: contents;
-            width: 100%;
-            .menuLaptop{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 80%;
-                padding-left: 5rem;
-                li {
-                    position: relative; 
-        
-                    a {
-                        text-decoration: none;
-                        color: #00471A;
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 1.1rem;
-                        padding-bottom: 5px;
-                        text-shadow: 0 1px 1px #00471a3f;
-                        transition: color 0.3s ease, text-shadow 0.3s ease; 
-                        text-transform: uppercase;
-        
-                        &::after { 
-                            content: '';
-                            position: absolute;
-                            width: 100%;
-                            height: 2px;
-                            bottom: -4px;
-                            left: 0;
-                            background-color: transparent;
-                            transform: scaleX(0);
-                            transition: all 0.3s ease-in-out;
-                        }
-        
-                        &:hover {
-                            color: #FE6600;
-        
-                            &::after { 
-                                background-color: #FE6600;
-                                transform: scaleX(1);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.menuLaptop{
-    margin: 0;
 }

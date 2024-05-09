@@ -11,37 +11,34 @@
     <title>Campo Fertil</title>
 </head>
 <body>
-    <div class="containerNavbar">
-        <div class="containerLogo">
-            <a href="./index.html"><img class="BrandNavbar" src="./img/Brand minimalista.svg" alt="LogoCampoFertil"></a> 
-         </div>
-        <div class="buttonToggleMenu" id="openButton">
-            <div class="line" id="lineone"></div>
-            <div class="line" id="linetwo"></div>
-            <div class="line" id="linethree"></div>
-        </div>
-        
-        <nav class="containerMenuLaptop">
-            <ul class="menuLaptop">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/insumos.html">INSUMOS</a></li>
-                <li><a href="">ACOPIO</a></li>
-                <li><a href="">logistica </a></li>
-                <li><a href="">agricultura </a></li>
-                <li><a href="">Nosotros</a></li>                
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    <nav id="menu" class="containerMenuHidden">
-        <ul class="menuHidden">
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./pages/insumos.html">INSUMOS</a></li>
+    <nav class="containerNavbar">
+        <img src="./img/Brand CampoFertil.svg" alt="Campo Fértil" class="containerLogoNavbar">
+        <ul class="containerListNavbar">
+            <li class="listNavbar"><a href="./index.html">INICIO</a></li>
+            <li class="listNavbar"><a href="./pages/insumos.html">INSUMOS</a></li>
+            <li class="listNavbar"><a href="">ACOPIO</a></li>
+            <li class="listNavbar"><a href="">LOGISTICA</a></li>
+            <li class="listNavbar"><a href="">AGRICULTURA</a></li>
+            <li class="listNavbar"><a href="">NOSOTROS</a></li>
+            <li class="listNavbar"><a href="">CONTACTO</a></li>
+            <div class="buttonToggleMenu" id="buttonToggleMenu">
+                <div class="containerLines">
+                    <div class="lineone" id="lineone"></div>
+                    <div class="linetwo" id="linetwo"></div>
+                    <div class="linethree" id="linethree"></div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <nav class="elMenuHamburguesa" id="menuHamburguesa">
+        <ul class="containerListMenuHamburguesa">
+            <li><a href="">INICIO</a></li>
+            <li><a href="">INSUMOS</a></li>
             <li><a href="">ACOPIO</a></li>
-            <li><a href="">logistica </a></li>
-            <li><a href="">agricultura </a></li>
-            <li><a href="">Nosotros</a></li>                
-            <li><a href="">Contacto</a></li>
+            <li><a href="">LOGISTICA</a></li>
+            <li><a href="">AGRICULTURA</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">CONTACTO</a></li>
         </ul>
     </nav>
     <div class="ContainerLanding">
@@ -57,7 +54,7 @@
             
         </div>
         <div class="ContainerButtonDown">
-            <button id="buttondown" class="ButtonDown"><img class="ImgBtnDown" src="./img/row.svg" alt=""></button>
+            <button id="buttondown" class="ButtonDown"><img class="ImgBtnDown" src="./img/row.svg" alt="boton de movimiento"></button>
         </div>
     </div>
     <div class="ContainerAll">
@@ -72,18 +69,18 @@
                 </div>
             </div>
             <div class="ContainerProductos">
-                    <div class="ContainerTittleProductos"><h2>PRODUCTOS</h2></div>
+                    <div class="ContainerTittleProductos"><h2>INSUMOS</h2></div>
                     <div class="ContaineProductosDestacados">
                         <div class="ContainerImgProducts">
-                            <img class="ImgProducts" src="./img/producto1.jpg" alt="">
-                            <img class="ImgProducts" src="./img/producto2.jpg" alt="">
-                            <img class="ImgProducts" src="./img/producto3.jpg" alt="">
-                            <img class="ImgProducts" src="./img/producto4.jpg" alt="">
-                            <img class="ImgProducts" src="./img/producto5.jpg" alt="">
-                            <img class="ImgProducts" src="./img/producto6.jpg" alt="">
+                            <img class="ImgProducts" src="./img/producto1.jpg" alt="productos insumos">
+                            <img class="ImgProducts" src="./img/producto2.jpg" alt="productos insumos">
+                            <img class="ImgProducts" src="./img/producto3.jpg" alt="productos insumos">
+                            <img class="ImgProducts" src="./img/producto4.jpg" alt="productos insumos">
+                            <img class="ImgProducts" src="./img/producto5.jpg" alt="productos insumos">
+                            <img class="ImgProducts" src="./img/producto6.jpg" alt="productos insumos">
                         </div>
                         <div class="ContainerButtonVerProductos">
-                            <a href=""><button class="ButtonVerProductos">ver todos</button></a>
+                            <a href="./pages/insumos.html"><button class="ButtonVerProductos">ver todos</button></a>
                         </div>
                     </div>
             </div>
@@ -94,31 +91,40 @@
                         <h2 class="TittleFoliares">Foliares</h2>
                     </div>
                     <div class="ContainerImagenEnfermedades">
-                        <img class="ImgEnfermedades" src="./img/control de enfermedades.png" alt="">
+                        <img class="ImgEnfermedades" src="./img/control de enfermedades.png" alt="control de enfermedades">
                     </div>
                 </div>
             </div>
             <div class="ContainerLogistica">
                 <div class="ContainerInfoLogistica">
                     <div class="ContainerTextLogistica">
-                        <h2>LOGISTICA</h2>
-                        <p>CAMPOFERTIL se encuentra ubicada en Villaguay, provincia de Entre Rios. Bordeada por la Ruta Nacional Nro 11 y estratégicamente circunscripta en uno de los corredores viales mas importantes del MERCOSUR. </p>
+                        <h2>PLANTA DE ACOPIO</h2>
+                        <p>Con el fin de cubrir necesidades propias y de clientes, contamos con una planta de acopio de cereales, ubicada en Parque Industrial Villaguay, sobre Ruta 18, KM 147,5.
+                        Brindando servicios de:
+                        </p>
                         <ul>
-                            <li>Automatización del manipuleo de pallets en el interior del depósito, lo que permite reducir a la mínima expresión el riesgo de accidentes personales y medioambientales.</li>
-                            <li>Deposito auto contenedor, la obra realizada permite que en caso de derrames mayores y en caso de generación de líquidos de emergencia, el mismo depósito los contenga.</li>
-                            <li>Mayor cantidad de posiciones disponibles: 3.600.</li>
-                            <li>Software para autogestión consultas de stock, posiciones, días de permanencia, rotación del producto, etc.</li>
+                            <li>Comercialización de granos
+                            </li>
+                            <li>Secado</li>
+                            <li>Pulverizado contra Insectos
+                            </li>
+                            <li>Inhibidor de olor
+                            </li>
+                            <li>Zaranda
+                            </li>
+                            <li>Acopio de granos
+                            </li>
                         </ul>
                     </div>
                     <div class="ContainerImgLogistica">
-                        <img src="./img/logisticaCampoFertil.jpg" alt="">
+                        <img src="./img/logisticaCampoFertil.jpg" alt="logistica">
                     </div>
                 </div>
             </div>
             <footer>
                 <div class="ContainerFooter">
                     <div class="ContainerLogoFooter">
-                        <img src="./img/Brand Verde.svg" alt="">
+                        <img src="./img/Brand Verde.svg" alt="CampoFertil">
                     </div>
                     <div class="ContainerNavbarFooter">
                         <ul>
@@ -128,9 +134,9 @@
                         </ul>
                     </div>
                     <div class="ContainerSocialMedia">
-                        <a href=""><img src="./img/facebook.svg" alt=""></a>
-                        <a href=""><img src="./img/instagram.svg" alt=""></a>
-                        <a href=""><img src="./img/linkedin.svg" alt=""></a>
+                        <a href=""><img src="./img/facebook.svg" alt="facebook"></a>
+                        <a href=""><img src="./img/instagram.svg" alt="instagram"></a>
+                        <a href=""><img src="./img/linkedin.svg" alt="linkedin"></a>
                     </div>
                 </div>
                 
