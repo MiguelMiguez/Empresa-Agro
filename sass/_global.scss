@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: $font;
 }
 ol, ul {
 	list-style: none;
@@ -44,4 +45,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+*{
+	line-height: 1;
+	font-family: $font;
+	vertical-align: baseline;
+	box-sizing: border-box;
 }

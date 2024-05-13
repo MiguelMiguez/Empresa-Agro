@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    font-family: $font;
     .TittleCategoria{
         display: flex;
         flex-direction: column;
@@ -25,11 +26,13 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-family: $font;
+        
         
         .TextoCategoria{
             padding: 2rem 1.2rem;
             font-size: 1.3rem;
+            font-weight: 400;
+            color: $colorverde;
         }
     }
 
