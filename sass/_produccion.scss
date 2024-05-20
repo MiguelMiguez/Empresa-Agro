@@ -8,7 +8,7 @@
         width: 100%;
         height: auto;
         z-index: 2;
-        overflow: hidden;
+        
         video{
             width: 100%;
             height: auto;
@@ -96,7 +96,7 @@
             transition: 1s;
         }
         img:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 }
@@ -165,7 +165,7 @@
             transition: 1s;
         }
         img:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 }
@@ -174,7 +174,7 @@
     .PortadaProduccion{
 
         .ContainerTittleProduccion{
-            min-height: 50vh;
+            min-height: 40vh;
             width: 500px;
             h2{
                 font-size: 3rem;
@@ -271,7 +271,7 @@
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .PortadaProduccion{
         .ContainerTittleProduccion{
-            min-height: 85vh;
+            min-height: 50vh;
             width: 500px;
             h2{
                 font-size: 3.5rem;
@@ -373,7 +373,7 @@
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .PortadaProduccion{
         .ContainerTittleProduccion{
-            min-height: 100vh;
+            min-height: 62vh;
             width: 500px;
             h2{
                 font-size: 3.5rem;
