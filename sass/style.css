@@ -592,12 +592,14 @@ table {
   align-items: center;
 }
 .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
-  width: 70px;
+  width: 100px;
   height: auto;
 }
 .ContainerProductos .ContaineProductosDestacados .ContainerButtonVerProductos {
@@ -629,7 +631,6 @@ table {
     font-size: 3.5rem;
   }
   .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 4rem;
   }
   .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
@@ -643,7 +644,7 @@ table {
     padding-bottom: 5rem;
   }
   .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 3rem;
     gap: 4rem;
   }
   .ContainerProductos .ContaineProductosDestacados .ContainerImgProducts .ImgProducts {
@@ -790,14 +791,15 @@ table {
     align-items: start;
     flex-direction: column;
     width: 55%;
-    height: 70%;
+    height: 60%;
+    gap: 2rem;
   }
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-left: 2rem;
   }
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
-    font-size: 8rem;
+    font-size: 6rem;
     margin-left: 2rem;
   }
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
@@ -1071,7 +1073,7 @@ footer .ContainerCopy p {
 }
 .ContainerPasarelaLogos {
   overflow: hidden;
-  padding: 10px 0;
+  padding: 40px 0;
   position: relative;
   display: flex;
   gap: 2rem;
@@ -1119,7 +1121,7 @@ footer .ContainerCopy p {
 @media only screen and (min-width: 1400px) {
   .ContainerPasarelaLogos {
     width: 100%;
-    padding: 10px 0;
+    padding: 2rem 0;
   }
   .ContainerPasarelaLogos .LogoGallery {
     height: 120px;
@@ -1709,6 +1711,44 @@ ol, ul {
 .ContainerNosotros .ContainerInfoNosotrosRigth .NosotrosImage #nota:hover {
   transform: scale(1.05);
 }
+.ContainerNosotros .valores {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-areas: "etica responsabilidad responsabilidad trabajo" "confianza valores valores trabajo" "confianza empatia integridad trabajo" "compromiso compromiso relaciones relaciones";
+}
+.ContainerNosotros .valores .responsabilidad {
+  grid-area: responsabilidad;
+}
+.ContainerNosotros .valores .principal {
+  grid-area: valores;
+  font-size: 3rem;
+}
+.ContainerNosotros .valores .etica {
+  grid-area: etica;
+  writing-mode: vertical-rl;
+}
+.ContainerNosotros .valores .trabajo {
+  grid-area: trabajo;
+  writing-mode: vertical-rl;
+}
+.ContainerNosotros .valores .relaciones {
+  grid-area: relaciones;
+}
+.ContainerNosotros .valores .integridad {
+  grid-area: integridad;
+}
+.ContainerNosotros .valores .empatia {
+  grid-area: empatia;
+}
+.ContainerNosotros .valores .confianza {
+  grid-area: confianza;
+  writing-mode: vertical-rl;
+}
+.ContainerNosotros .valores .compromiso {
+  grid-area: compromiso;
+}
 .ContainerNosotros .Video {
   display: flex;
   justify-content: center;
@@ -1995,13 +2035,17 @@ ol, ul {
   justify-content: center;
   width: 100%;
   height: 100%;
+  margin: 2rem;
 }
 .plantaDeAcopio .containerImgAcopio .imgAcopioUno {
-  width: 200px;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
 }
 .plantaDeAcopio .containerImgAcopio .imgAcopioDos {
-  width: 174px;
+  width: 220px;
   transform: translateX(64px) translateY(-40px);
+  border-radius: 5px;
 }
 
 .containerAllContentServicesAcopio {
@@ -2150,8 +2194,13 @@ ol, ul {
   .plantaDeAcopio .containerImgAcopio {
     align-items: center;
     padding-left: 0;
-    justify-content: start;
     padding-top: 2rem;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioUno {
+    width: 250px;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioDos {
+    width: 250px;
   }
   .containerAllContentServicesAcopio {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
@@ -2184,8 +2233,13 @@ ol, ul {
   .plantaDeAcopio .containerImgAcopio {
     align-items: center;
     padding-left: 0;
-    justify-content: start;
     padding-top: 2rem;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioUno {
+    width: 300px;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioDos {
+    width: 300px;
   }
   .containerAllContentServicesAcopio {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
@@ -2229,8 +2283,13 @@ ol, ul {
   .plantaDeAcopio .containerImgAcopio {
     align-items: center;
     padding-left: 0;
-    justify-content: start;
     padding-top: 2rem;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioUno {
+    width: 400px;
+  }
+  .plantaDeAcopio .containerImgAcopio .imgAcopioDos {
+    width: 400px;
   }
   .containerAllContentServicesAcopio {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
@@ -2510,7 +2569,7 @@ ol, ul {
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .PortadaProduccion .ContainerTittleProduccion {
-    min-height: 50vh;
+    min-height: 100vh;
     width: 500px;
   }
   .PortadaProduccion .ContainerTittleProduccion h2 {
@@ -2606,9 +2665,9 @@ ol, ul {
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1700px) {
   .PortadaProduccion .ContainerTittleProduccion {
-    min-height: 62vh;
+    min-height: 100vh;
     width: 500px;
   }
   .PortadaProduccion .ContainerTittleProduccion h2 {
@@ -2704,9 +2763,9 @@ ol, ul {
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1700px) {
   .PortadaProduccion .ContainerTittleProduccion {
-    min-height: 95vh;
+    min-height: 100vh;
     width: 500px;
   }
   .PortadaProduccion .ContainerTittleProduccion h2 {
@@ -2731,8 +2790,8 @@ ol, ul {
   }
   .ContainerAgricultura .ContainerInfo {
     position: relative;
-    background-color: #4d8961;
-    width: 70%;
+    background-color: rgba(53, 110, 72, 0.9647058824);
+    width: 60%;
     align-items: start;
     padding: 0;
     min-height: 100vh;
@@ -2758,7 +2817,7 @@ ol, ul {
     font-weight: 400;
     margin: 20px 20px 0px 50px;
     padding: 2rem 0rem;
-    width: 80%;
+    width: 70%;
     font-size: 1.5rem;
   }
   .ContainerAgricultura .ContainerImgProduccion {
@@ -2766,7 +2825,7 @@ ol, ul {
     right: 0;
   }
   .ContainerAgricultura .ContainerImgProduccion img {
-    margin: 200px 25px 0px 25px;
+    margin: 2rem 150px;
     width: 720px;
     border-radius: 10px;
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
@@ -2779,8 +2838,8 @@ ol, ul {
   }
   .ContainerGanaderia .ContainerInfo {
     position: relative;
-    background-color: #4d8961;
-    width: 70%;
+    background-color: rgba(53, 110, 72, 0.9647058824);
+    width: 60%;
     align-items: end;
     padding: 0;
     min-height: 100vh;
@@ -2806,7 +2865,7 @@ ol, ul {
     font-weight: 400;
     margin: 100px 50px 0px 20px;
     padding: 2rem 0rem;
-    width: 80%;
+    width: 70%;
     font-size: 1.5rem;
   }
   .ContainerGanaderia .ContainerImgProduccion {
@@ -2814,9 +2873,249 @@ ol, ul {
     left: 0;
   }
   .ContainerGanaderia .ContainerImgProduccion img {
-    margin: 2rem;
+    margin: 2rem 150px;
     width: 720px;
     border-radius: 10px;
     filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  }
+}
+.Galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+.Galeria .ContainerImage {
+  width: 100%;
+  height: auto;
+  transition: 1s;
+}
+.Galeria .ContainerImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.322);
+}
+.Galeria .ContainerImage:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.Galeria .ContainerImage:hover img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.322);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+  .Galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .Galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem;
+    gap: 3rem 1rem;
+  }
+}
+.containerContactoPrincipal {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(95deg, rgba(13, 70, 38, 0.781) 0%, rgba(17, 15, 16, 0.521) 100%), url(../img/contacto/portada\ contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.containerContactoPrincipal .containerInfoContactoPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+}
+.containerContactoPrincipal .nameContactoPrincipal {
+  font-size: 1rem;
+}
+.containerContactoPrincipal .titleContactoPrincipal {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.containerComunicationChannels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem 0;
+}
+.containerComunicationChannels .channels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.containerComunicationChannels .channels .headOffice, .containerComunicationChannels .channels .phoneNumber, .containerComunicationChannels .channels .adressElectronic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #356E48;
+  padding: 2rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+.containerComunicationChannels .channels .headOffice img, .containerComunicationChannels .channels .phoneNumber img, .containerComunicationChannels .channels .adressElectronic img {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 0 2px black);
+}
+.containerComunicationChannels .channels .headOffice p, .containerComunicationChannels .channels .phoneNumber p, .containerComunicationChannels .channels .adressElectronic p {
+  text-align: center;
+}
+
+.containerFormularioContacto {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.containerFormularioContacto .formularioContacto {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  background-color: rgb(240, 240, 240);
+}
+.containerFormularioContacto .formularioContacto .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.containerFormularioContacto .formularioContacto .group label {
+  color: #00471A;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.containerFormularioContacto .formularioContacto .group input, .containerFormularioContacto .formularioContacto .group textarea {
+  padding: 1rem;
+  border-radius: 4px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 23px;
+}
+.containerFormularioContacto .formularioContacto .group textarea {
+  height: 200px;
+}
+.containerFormularioContacto .formularioContacto .group button {
+  width: 50%;
+  max-width: 150px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #356E48;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 2px black);
+  transition: 0.5s;
+}
+.containerFormularioContacto .formularioContacto .group button:hover {
+  color: #356E48;
+  background-color: white;
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 10px rgba(13, 165, 64, 0.4);
+  font-weight: 700;
+}
+.containerFormularioContacto .mapaCasaCentral {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerFormularioContacto .mapaCasaCentral iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .containerComunicationChannels {
+    padding: 5rem 0;
+  }
+  .containerComunicationChannels .channels {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .containerComunicationChannels {
+    padding: 5rem 0;
+  }
+  .containerComunicationChannels .channels {
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .containerFormularioContacto {
+    gap: 0;
+    flex-direction: row;
+  }
+  .containerFormularioContacto .mapaCasaCentral {
+    width: 100%;
+    height: 682px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .containerFormularioContacto .mapaCasaCentral iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containerComunicationChannels {
+    padding: 10rem 0;
+  }
+  .containerComunicationChannels .channels {
+    flex-direction: row;
+    gap: 16rem;
+  }
+  .containerFormularioContacto {
+    gap: 0;
+    flex-direction: row;
+  }
+  .containerFormularioContacto .mapaCasaCentral {
+    width: 100%;
+    height: 682px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .containerFormularioContacto .mapaCasaCentral iframe {
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

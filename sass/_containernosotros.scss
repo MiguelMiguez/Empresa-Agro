@@ -97,6 +97,50 @@
         }
     }
     
+    .valores{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-areas: "etica responsabilidad responsabilidad trabajo"
+                             "confianza valores valores trabajo"
+                             "confianza empatia integridad trabajo"
+                             "compromiso compromiso relaciones relaciones";
+        
+        .responsabilidad{
+            grid-area: responsabilidad ;
+        }
+        .principal{
+            grid-area: valores;
+            font-size: 3rem;
+        }
+        .etica{
+            grid-area: etica; 
+            writing-mode: vertical-rl;
+        }
+        .trabajo{
+            grid-area: trabajo;
+            writing-mode: vertical-rl;
+            
+            
+        } 
+        .relaciones{
+            grid-area: relaciones;
+        }
+        .integridad{
+            grid-area: integridad;
+        }
+        .empatia{
+            grid-area: empatia;
+        }
+        .confianza{
+            grid-area: confianza;
+            writing-mode: vertical-rl
+        }
+        .compromiso{
+            grid-area: compromiso;
+        }
+    }
 
     
     .Video{

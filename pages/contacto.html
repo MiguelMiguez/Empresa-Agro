@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="../sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Brand blanco.svg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campo Fertil</title>
 </head>
 <body>
-    
+    <nav class="containerNavbar">
+        <img src="../img/Brand CampoFertil.svg" alt="Campo Fértil" class="containerLogoNavbar">
+        <ul class="containerListNavbar">
+            <li class="listNavbar"><a href="../index.html">INICIO</a></li>
+            <li class="listNavbar"><a href="./insumos.html">INSUMOS</a></li>
+            <li class="listNavbar"><a href="./acopio.html">ACOPIO</a></li>
+            <li class="listNavbar"><a href="./logistica.html">LOGISTICA</a></li>
+            <li class="listNavbar"><a href="./produccion.html">PRODUCCIÓN</a></li>
+            <li class="listNavbar"><a href="./nosotros.html">NOSOTROS</a></li>
+            <li class="listNavbar"><a href="./contacto.html">CONTACTO</a></li>
+            <div class="buttonToggleMenu" id="buttonToggleMenu">
+                <div class="containerLines">
+                    <div class="lineone" id="lineone"></div>
+                    <div class="linetwo" id="linetwo"></div>
+                    <div class="linethree" id="linethree"></div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <nav class="elMenuHamburguesa" id="menuHamburguesa">
+        <ul class="containerListMenuHamburguesa">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./insumos.html">INSUMOS</a></li>
+            <li><a href="./acopio.html">ACOPIO</a></li>
+            <li><a href="./logistica.html">LOGISTICA</a></li>
+            <li><a href="./produccion.html">PRODUCCIÓN</a></li>
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div class="containerContactoPrincipal">
+        <div class="containerInfoContactoPrincipal">
+            <h1 class="nameContactoPrincipal">Campo Fértil</h1>
+            <span class="titleContactoPrincipal">CONTACTO</span>
+        </div>
+    </div>
+    <div class="containerComunicationChannels">
+        <div class="channels">
+            <div class="headOffice">
+                <img src="../img/contacto/adress.svg" alt="">
+                <p>Acceso Carlos Fuertes 159.64 km,<br> E3240 Villaguay, Entre Ríos</p>
+            </div>
+            <div class="phoneNumber">
+                <img src="../img/contacto/phone.svg" alt="">
+                <p>+5491122334455</p>
+            </div>
+            <div class="adressElectronic">
+                <img src="../img/contacto/email.svg" alt="">
+                <p>campofertil@contacto.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="containerFormularioContacto">
+        <form action="/enviar" method="post" class="formularioContacto">
+            <div class="group">
+                <input placeholder="Nombre" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="group">
+                <input placeholder="Apellido" type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="group">
+                <input placeholder="Email" type="email" id="email" name="email" required>
+            </div>
+            <div class="group">
+                <textarea placeholder="Asunto" name="" id=""></textarea>
+            </div>
+            <div  class="group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="mapaCasaCentral">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3390.481351890878!2d-59.02970152352167!3d-31.811882115483453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b180add58fcc51%3A0x8d664ba116f3b9e9!2sCampo%20F%C3%A9rtil%20SRL!5e0!3m2!1ses!2sar!4v1716416208233!5m2!1ses!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="ContainerFooter">
+            <div class="ContainerLogoFooter">
+                <img src="../img/Brand Verde.svg" alt="CampoFertil">
+            </div>
+            <div class="ContainerNavbarFooter">
+                <ul>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">nosotros</a></li>
+                    <li><a href="">logistica</a></li>
+                </ul>
+            </div>
+            <div class="ContainerSocialMedia">
+                <a href=""><img src="../img/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="../img/instagram.svg" alt="instagram"></a>
+                <a href=""><img src="../img/linkedin.svg" alt="linkedin"></a>
+            </div>
+        </div>
+        
+        <div class="ContainerCopy">
+            <p>© 2024 CampoFertil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

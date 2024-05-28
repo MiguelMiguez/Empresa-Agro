@@ -156,14 +156,15 @@
                 align-items: start;
                 flex-direction: column;
                 width: 55%;
-                height: 70%;
+                height: 60%;
+                gap: 2rem;
      
                 .TittleControl{
-                    font-size: 6rem;
+                    font-size: 5rem;
                     margin-left: 2rem;
                 }
                 .TittleFoliares{
-                    font-size: 8rem;
+                    font-size: 6rem;
                     margin-left: 2rem;
                 }
             }

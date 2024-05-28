@@ -72,13 +72,16 @@
         justify-content: center;
         width: 100%;
         height: 100%;
+        margin: 2rem;
         .imgAcopioUno{
-            width: 200px;
-
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
         }
         .imgAcopioDos{
-            width: 174px;
-            transform: translateX(64px) translateY(-40px)
+            width: 220px;
+            transform: translateX(64px) translateY(-40px);
+            border-radius: 5px;
         }
     }
 
@@ -233,8 +236,13 @@
         .containerImgAcopio{
             align-items: center;
             padding-left: 0;
-            justify-content: start;
             padding-top: 2rem;
+            .imgAcopioUno{
+                width: 250px;
+            }
+            .imgAcopioDos{
+                width: 250px;
+            }
         }
     }
     .containerAllContentServicesAcopio{
@@ -274,8 +282,13 @@
         .containerImgAcopio{
             align-items: center;
             padding-left: 0;
-            justify-content: start;
             padding-top: 2rem;
+            .imgAcopioUno{
+                width: 300px;
+            }
+            .imgAcopioDos{
+                width: 300px;
+            }
         }
     }
     .containerAllContentServicesAcopio{
@@ -283,6 +296,7 @@
         .containerImgServicesAcopio{
             display: block;
             width: 480px;
+
         }
         .containerServicesAcopio{
             .containerTitleServicesAcopio{
@@ -324,8 +338,13 @@
         .containerImgAcopio{
             align-items: center;
             padding-left: 0;
-            justify-content: start;
             padding-top: 2rem;
+            .imgAcopioUno{
+                width: 400px;
+            }
+            .imgAcopioDos{
+                width: 400px;
+            }
         }
     }
     .containerAllContentServicesAcopio{
