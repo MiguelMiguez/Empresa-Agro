@@ -1,0 +1,141 @@
+.Sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #356e48f6;
+    .TittleSucursal{
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 2rem;
+        color: white;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+    }
+    .CasaCentral{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .CentralInfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            height: 30vh;
+            h2{
+                font-size: 2rem;
+                font-weight: 800;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+            }
+            p{  
+                text-align: center;
+                margin: 2rem 2rem 0rem 2rem;
+            }
+        }
+        .SucursalCentral{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ImgSucursalCentral{
+                width: 300px;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .ValleMaria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .SucInfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            height: 30vh;
+            h2{
+                font-size: 2rem;
+                font-weight: 800;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+            }
+            p{  
+                text-align: center;
+                margin: 2rem 2rem 0rem 2rem;
+            }
+        }
+        .SucursalValle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ImgSucursalCentral{
+                width: 300px;
+                height: auto;
+                border-radius: 20px;
+                margin: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+   .Sucursales{
+    padding-bottom: 100px;
+    .TittleSucursal{
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 2rem;
+        color: white;
+    }
+
+    .CasaCentral{
+        flex-direction: row;
+        margin-top: 5rem;
+        .CentralInfo{
+            width: 50%;
+            align-items: start;
+            h2{
+               margin-left: 2rem;
+                text-align: start;
+            }
+            p{ 
+                text-align: start;
+                font-size: 1.5rem;
+            }
+        }
+        .SucursalCentral{
+            width: 50%;
+            .ImgSucursalCentral{
+                width: 400px;
+            }
+        }
+    }
+    .ValleMaria{
+        flex-direction: row-reverse;
+        .SucInfo{
+            width: 50%;
+            align-items: start;
+            h2{
+               margin-left: 2rem;
+                text-align: start;
+            }
+            p{ 
+                text-align: start;
+                font-size: 1.5rem;
+            }
+        }
+        .SucursalValle{
+            width: 50%;
+            .ImgSucursalCentral{
+                width: 400px;
+            }
+            
+        }
+    }
+  }
+}

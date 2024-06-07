@@ -561,6 +561,144 @@ table {
     font-size: 2rem;
   }
 }
+.Sucursales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(53, 110, 72, 0.9647058824);
+}
+.Sucursales .TittleSucursal {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 2rem;
+  color: white;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.Sucursales .CasaCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Sucursales .CasaCentral .CentralInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 30vh;
+}
+.Sucursales .CasaCentral .CentralInfo h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.Sucursales .CasaCentral .CentralInfo p {
+  text-align: center;
+  margin: 2rem 2rem 0rem 2rem;
+}
+.Sucursales .CasaCentral .SucursalCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Sucursales .CasaCentral .SucursalCentral .ImgSucursalCentral {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+.Sucursales .ValleMaria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Sucursales .ValleMaria .SucInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 30vh;
+}
+.Sucursales .ValleMaria .SucInfo h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
+}
+.Sucursales .ValleMaria .SucInfo p {
+  text-align: center;
+  margin: 2rem 2rem 0rem 2rem;
+}
+.Sucursales .ValleMaria .SucursalValle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Sucursales .ValleMaria .SucursalValle .ImgSucursalCentral {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .Sucursales {
+    padding-bottom: 100px;
+  }
+  .Sucursales .TittleSucursal {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 2rem;
+    color: white;
+  }
+  .Sucursales .CasaCentral {
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+  .Sucursales .CasaCentral .CentralInfo {
+    width: 50%;
+    align-items: start;
+  }
+  .Sucursales .CasaCentral .CentralInfo h2 {
+    margin-left: 2rem;
+    text-align: start;
+  }
+  .Sucursales .CasaCentral .CentralInfo p {
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .Sucursales .CasaCentral .SucursalCentral {
+    width: 50%;
+  }
+  .Sucursales .CasaCentral .SucursalCentral .ImgSucursalCentral {
+    width: 400px;
+  }
+  .Sucursales .ValleMaria {
+    flex-direction: row-reverse;
+  }
+  .Sucursales .ValleMaria .SucInfo {
+    width: 50%;
+    align-items: start;
+  }
+  .Sucursales .ValleMaria .SucInfo h2 {
+    margin-left: 2rem;
+    text-align: start;
+  }
+  .Sucursales .ValleMaria .SucInfo p {
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .Sucursales .ValleMaria .SucursalValle {
+    width: 50%;
+  }
+  .Sucursales .ValleMaria .SucursalValle .ImgSucursalCentral {
+    width: 400px;
+  }
+}
 .ContainerProductos {
   display: flex;
   flex-direction: column;
@@ -772,8 +910,8 @@ table {
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
     width: 60%;
     z-index: 3;
-    margin-top: 260px;
-    margin-left: 600px;
+    margin-top: 350px;
+    margin-left: 650px;
     right: 0;
   }
 }
@@ -2186,7 +2324,7 @@ ol, ul {
   }
   .plantaDeAcopio {
     flex-direction: row;
-    height: 60vh;
+    height: 100vh;
   }
   .plantaDeAcopio .containerTextPlantaAcopio button {
     width: 80%;
@@ -2219,7 +2357,7 @@ ol, ul {
   }
   .plantaDeAcopio {
     flex-direction: row;
-    height: 70vh;
+    height: 100vh;
   }
   .plantaDeAcopio .containerTextPlantaAcopio h2 {
     font-size: 2rem;
@@ -2265,7 +2403,7 @@ ol, ul {
   }
   .plantaDeAcopio {
     flex-direction: row;
-    height: 80vh;
+    height: 100vh;
   }
   .plantaDeAcopio .containerTextPlantaAcopio {
     margin-left: 100px;
