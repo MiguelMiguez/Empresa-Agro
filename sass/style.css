@@ -675,7 +675,7 @@ table {
     width: 50%;
   }
   .Sucursales .CasaCentral .SucursalCentral .ImgSucursalCentral {
-    width: 400px;
+    width: 500px;
   }
   .Sucursales .ValleMaria {
     flex-direction: row-reverse;
@@ -696,7 +696,7 @@ table {
     width: 50%;
   }
   .Sucursales .ValleMaria .SucursalValle .ImgSucursalCentral {
-    width: 400px;
+    width: 500px;
   }
 }
 .ContainerProductos {
@@ -835,7 +835,7 @@ table {
 }
 .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleFoliares {
   padding: 0rem 2rem 2.5rem 1rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #5FB15C;
   text-transform: uppercase;
   font-weight: 700;
@@ -928,8 +928,8 @@ table {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    width: 55%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     gap: 2rem;
   }
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerTittleEnfermedades .TittleControl {
@@ -941,10 +941,10 @@ table {
     margin-left: 2rem;
   }
   .ContainerControlEnfermedades .ContainerInfoEnfermedades .ContainerImagenEnfermedades {
-    width: 100%;
+    width: 80%;
     z-index: 3;
     margin-top: 400px;
-    margin-left: 1000px;
+    margin-left: 700px;
     right: 0;
   }
 }
@@ -2107,7 +2107,7 @@ ol, ul {
   background-color: gray;
   display: flex;
   align-items: center;
-  background-image: url(../img/Acopio/tomasz-filipek-joOVC9d-jis-unsplash.jpg);
+  background-image: linear-gradient(95deg, rgba(26, 121, 67, 0.644) 0%, rgba(0, 0, 0, 0.562) 100%), url(../img/Acopio/fondo.jpg);
   background-size: cover;
 }
 .separadorAcopio .nameCampoFertil {
@@ -3086,6 +3086,32 @@ ol, ul {
   font-weight: 600;
 }
 
+.TittleSuc {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 2rem;
+}
+.TittleSuc h2 {
+  font-size: 2rem;
+  color: #356E48;
+  font-weight: 800;
+  text-align: center;
+}
+
+.TittleSucRigth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem;
+}
+.TittleSucRigth h2 {
+  font-size: 2rem;
+  color: #356E48;
+  font-weight: 800;
+  text-align: center;
+}
+
 .containerComunicationChannels {
   display: flex;
   flex-direction: column;
@@ -3204,7 +3230,15 @@ ol, ul {
   }
   .containerComunicationChannels .channels {
     flex-direction: row;
-    gap: 4rem;
+    gap: 1rem;
+  }
+  .containerComunicationChannels .channels .headOffice, .containerComunicationChannels .channels .phoneNumber, .containerComunicationChannels .channels .adressElectronic {
+    width: 240px;
+    height: 240px;
+  }
+  .containerComunicationChannels .channels .headOffice img, .containerComunicationChannels .channels .phoneNumber img, .containerComunicationChannels .channels .adressElectronic img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {

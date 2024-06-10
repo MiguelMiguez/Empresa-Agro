@@ -36,7 +36,7 @@
             }
             .TittleFoliares{
                 padding: 0rem 2rem 2.5rem 1rem;
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 color: #5FB15C;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -156,8 +156,8 @@
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
-                width: 55%;
-                height: 60%;
+                width: 50%;
+                height: 50%;
                 gap: 2rem;
      
                 .TittleControl{
@@ -171,12 +171,13 @@
             }
          
             .ContainerImagenEnfermedades{
-                width: 100%; 
+                width: 80%; 
                 z-index: 3;
                 margin-top: 400px;
-                margin-left: 1000px;
+                margin-left: 700px;
                 right: 0;
 
+                
                 
             }
      

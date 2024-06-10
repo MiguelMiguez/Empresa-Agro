@@ -25,6 +25,33 @@
     }
 }
 
+.TittleSuc{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+    h2{
+        font-size: 2rem;
+        color: $colorverdealternativo;
+        font-weight: 800;
+        text-align: center;
+    }
+}
+
+.TittleSucRigth{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2rem;
+    h2{
+        font-size: 2rem;
+        color: $colorverdealternativo;
+        font-weight: 800;
+        text-align: center;
+    }
+
+}
+
 .containerComunicationChannels{
     display: flex;
     flex-direction: column;
@@ -143,7 +170,19 @@
         padding: 5rem 0;
         .channels{
             flex-direction: row;
-            gap: 4rem;
+            gap: 1rem;
+            .headOffice, .phoneNumber, .adressElectronic{
+    
+                width: 240px;
+                height: 240px;
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+               
+               
+            }
         }
     }
 }
