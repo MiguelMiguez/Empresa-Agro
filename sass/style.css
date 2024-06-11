@@ -3058,6 +3058,17 @@ ol, ul {
     padding: 5rem;
     gap: 3rem 1rem;
   }
+  .Galeria .ContainerImage {
+    width: 100%;
+    height: auto;
+    transition: 1s;
+  }
+  .Galeria .ContainerImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.322);
+  }
 }
 .containerContactoPrincipal {
   height: 50vh;
