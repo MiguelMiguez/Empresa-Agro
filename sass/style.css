@@ -608,6 +608,7 @@ table {
   width: 300px;
   height: auto;
   border-radius: 20px;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 .Sucursales .ValleMaria {
   display: flex;
@@ -643,6 +644,7 @@ table {
   height: auto;
   border-radius: 20px;
   margin: 2rem;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
 }
 
 @media only screen and (min-width: 1200px) {
