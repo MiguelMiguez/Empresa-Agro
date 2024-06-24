@@ -1,245 +1,314 @@
-.containerContactoPrincipal{
-    height: 50vh;
+.portadaContacto{
     width: 100%;
-    background-image: linear-gradient(95deg, rgba(13, 70, 38, 0.781) 0%, rgba(17, 15, 16, 0.521) 100%), url(../img/contacto/portada\ contacto.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
     font-family: $font;
     color: white;
-    .containerInfoContactoPrincipal{
+    font-size: 2rem;
+    background-image: url(../img/contacto/portadaContacto.jpeg);
+    background-size: cover;
+    p{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-left: 10%;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+.portadaContacto::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad aquí */
+    z-index: 1;
+}
+
+.titleSucursales{
+    width: 100%;
+    text-align: center;
+    font-family: $font;
+    font-weight: 600;
+    color: $colorverde;
+    padding: 4rem;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.containerSucursal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .infoCasaCentral{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        width: 100%;
-        height: 100%;
-        padding-left: 2rem;
+        gap: 2rem;
+        padding: 1rem;
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        border-radius: 8px;
+        h3{
+            color: $colornaranja;
+        }
+        h2{
+            color: $colorverde;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        hr{
+            background-color: black;
+            width: 100%;
+            height: 1px;
+        }
+        .location, .emailAdress, .phoneNumber{
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            .infoLocation{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .parrafoUno{
+                    font-weight: 600;
+                }
+                .parrafoDos, .parrafoTres{
+                    font-size: 0.7rem;
+                }
+            }
+        }
     }
-    .nameContactoPrincipal{
-        font-size: 1rem;
-    }
-    .titleContactoPrincipal{
-        font-size: 2rem;
-        font-weight: 600;
+    .mapCasaCentral{
+        width: 90%;
+        height: 256px;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
     }
 }
 
-.TittleSuc{
+.containerButtonCtaForm{
+    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    margin: 2rem;
-    h2{
-        font-size: 2rem;
-        color: $colorverdealternativo;
-        font-weight: 800;
-        text-align: center;
+    padding: 2rem 0;
+    .buttonCtaForm{
+        padding: 1rem;
+        width: 256px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 32px;
+        background-color: $colornaranja;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .buttonCtaForm:hover{
+        background-color: white;
+        color: black;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     }
 }
 
-.TittleSucRigth{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 2rem;
-    h2{
-        font-size: 2rem;
-        color: $colorverdealternativo;
-        font-weight: 800;
-        text-align: center;
-    }
-
-}
-
-.containerComunicationChannels{
+.portadaSecundariaContacto{
+    width: 100%;
+    height: 400px;
+    background-color: $colorverde;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: $font;
-    padding: 2rem 0;
-    .channels{
+    h2{
+        text-align: center;
+        font-family: $font;
+        color: white;
+        font-size: 3rem;
+        font-weight:600;
+        line-height: 200%;
+    }
+}
+
+.containerFormContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    .formularioDeContacto{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 2rem;
-        .headOffice, .phoneNumber, .adressElectronic{
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 1rem;
+        .elementForm{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             gap: 1rem;
-            background-color: $colorverdealternativo;
-            padding: 2rem;
-            width: 300px;
-            height: 300px;
-            border-radius: 100%;
-            color: white;
-            box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-            img{
-                width: 64px;
-                height: 64px;
-                filter: drop-shadow(0 0 2px black);
-            }
-            p{  
-                text-align: center;
-            }
-        }
-    }
-}
-
-.containerFormularioContacto{
-    font-family: $font;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    .formularioContacto{
-        width: 100%;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
-        background-color: rgb(240, 240, 240);
-        .group{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            label{
-                color: $colorverde;
-                font-weight:400;
-                font-size: 1rem;
-                
-            }
             input, textarea{
                 padding: 1rem;
-                border-radius: 4px;
                 border: none;
-                width: 80%;
-                max-width: 400px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-                border-radius: 23px;
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                transition: 0.2s;
             }
-            textarea{
-                height: 200px;
-            }
-            button{
-                width: 50%;
-                max-width: 150px;
-                padding: 1rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                border-radius: 25px;
+            input:focus, textarea:focus{
                 border: none;
-                background-color: $colorverdealternativo;
-                color: white;
-                font-family: $font;
-                font-size: 1rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                filter: drop-shadow(0 0 2px black);
-                transition: 0.5s;
+                box-shadow: 0 0 4px rgb(0, 71, 26, 0.5);
+                outline: none;
             }
-            button:hover{
-                color: $colorverdealternativo;
-                background-color: white;
-                transform: translateY(-7px);
-                box-shadow: 0px 5px 10px rgba(13, 165, 64, 0.4);
-                font-weight: 700;
+            input:hover, textarea:hover{
+                box-shadow: 0 0 4px rgb(0, 71, 26, 0.5);
             }
         }
-    }
-    .mapaCasaCentral{
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .containerComunicationChannels{
-        padding: 5rem 0;
-        .channels{
-            flex-direction: row;
-            gap: 1rem;
-            .headOffice, .phoneNumber, .adressElectronic{
-    
-                width: 240px;
-                height: 240px;
-
-                img{
-                    width: 40px;
-                    height: 40px;
-                }
-               
-               
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px){
-    .containerComunicationChannels{
-        padding: 5rem 0;
-        .channels{
-            flex-direction: row;
-            gap: 8rem;
-        }
-    }
-    .containerFormularioContacto{
-        gap: 0;
-        flex-direction: row;
-        .mapaCasaCentral{
-            width: 100%;
-            height: 682px;
+        .elementForm:last-child{
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: -2px 2px 4px 0 rgba(0,0,0,0.2);
-            iframe{
+            width: 100%;
+            button{
+                padding: 1rem;
                 width: 100%;
-                height: 100%;
+                max-width: 320px;
+                border: none;
+                background-color: $colorverde;
+                color: white;
+                font-size: 1rem;
+                border-radius: 8px;
+                cursor: pointer;
             }
         }
-
     }
+}
 
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .portadaContacto, .portadaContacto::before{
+        height: 50vh;
+    }
+    .titleSucursales{
+        font-size: 2rem;
+    }
+    .containerSucursal{
+        flex-direction: row;
+        .infoCasaCentral{
+            width: 45%;
+            h3{
+                font-size: 1rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+        }
+        .mapCasaCentral{
+            width: 45%;
+            height: 453.22px;
+        }
+    }
+    .containerFormContacto{
+        .formularioDeContacto{
+            padding: 4rem;
+            width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 1024px) and (max-width:1440px){
+    .portadaContacto, .portadaContacto::before{
+        height: 60vh;
+    }
+    .titleSucursales{
+        font-size: 2rem;
+    }
+    .containerSucursal{
+        flex-direction: row;
+        .infoCasaCentral{
+            width: 40%;
+            h3{
+                font-size: 1rem;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+            .location, .emailAdress, .phoneNumber{
+                .infoLocation{
+                    .parrafoUno{
+                        font-size: 1.2rem;
+                    }
+                    .parrafoDos, .parrafoTres{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .mapCasaCentral{
+            width: 40%;
+            height: 480.39px;
+        }
+    }
+    .containerFormContacto{
+        .formularioDeContacto{
+            padding: 4rem;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 1440px){
-    .containerComunicationChannels{
-        padding: 10rem 0;
-        .channels{
-            flex-direction: row;
-            gap: 16rem;
-        }
+    .portadaContacto, .portadaContacto::before{
+        height: 80vh;
     }
-    .containerFormularioContacto{
-        gap: 0;
+    .titleSucursales{
+        font-size: 4rem;
+    }
+    .containerSucursal{
         flex-direction: row;
-        .mapaCasaCentral{
-            width: 100%;
-            height: 682px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: -2px 2px 4px 0 rgba(0,0,0,0.2);
-            iframe{
-                width: 100%;
-                height: 100%;
+        .infoCasaCentral{
+            padding: 3rem;
+            width: 35%;
+
+            h3{
+                font-size: 1.5rem;
+            }
+            h2{
+                font-size: 2rem;
+            }
+            .location, .emailAdress, .phoneNumber{
+                .infoLocation{
+                    .parrafoUno{
+                        font-size: 1.5rem;
+                    }
+                    .parrafoDos, .parrafoTres{
+                        font-size: 1rem;
+                    }
+                }
             }
         }
-
+        .mapCasaCentral{
+            width: 35%;
+            height: 594px;
+        }
+    }
+    .containerFormContacto{
+        .formularioDeContacto{
+            padding: 4rem;
+            width: 100%;
+        }
     }
 }
-
 
