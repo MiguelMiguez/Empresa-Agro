@@ -2090,7 +2090,7 @@ ol, ul {
   background-color: gray;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(95deg, rgba(26, 121, 67, 0.644) 0%, rgba(0, 0, 0, 0.562) 100%), url(../img/Acopio/fondo.jpg);
+  background-image: linear-gradient(95deg, rgba(26, 121, 67, 0.445) 0%, rgba(0, 0, 0, 0.562) 100%), url(../img/Acopio/fondo.jpg);
   background-size: cover;
 }
 .separadorAcopio .nameCampoFertil {
@@ -2336,7 +2336,7 @@ ol, ul {
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .separadorAcopio {
-    height: 80vh;
+    height: 50vh;
   }
   .plantaDeAcopio {
     flex-direction: row;
@@ -2382,7 +2382,7 @@ ol, ul {
 }
 @media screen and (min-width: 1440px) {
   .separadorAcopio {
-    height: 100vh;
+    height: 60vh;
   }
   .plantaDeAcopio {
     flex-direction: row;
@@ -3089,7 +3089,7 @@ ol, ul {
   width: 100%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   color: #00471A;
   padding: 4rem;
   font-size: 1.5rem;
@@ -3164,19 +3164,24 @@ ol, ul {
 }
 .containerButtonCtaForm .buttonCtaForm {
   padding: 1rem;
-  width: 256px;
+  width: 200px;
   font-size: 1.2rem;
   border: none;
   border-radius: 32px;
   background-color: #FE6600;
   color: white;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.5s;
+  font-weight: 600;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .containerButtonCtaForm .buttonCtaForm:hover {
   background-color: white;
   color: black;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #FE6600;
+  transform: translateY(-10px);
 }
 
 .portadaSecundariaContacto {
@@ -3188,14 +3193,16 @@ ol, ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .portadaSecundariaContacto h2 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 200%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .containerFormContacto {
