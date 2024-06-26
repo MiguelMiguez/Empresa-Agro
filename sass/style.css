@@ -567,139 +567,190 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(53, 110, 72, 0.9647058824);
+  background-color: white;
+  gap: 50px;
 }
-.Sucursales .TittleSucursal {
-  font-size: 2rem;
-  font-weight: 800;
+.Sucursales .ContainerTittleSucHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  flex-direction: column;
+}
+.Sucursales .ContainerTittleSucHome .TittleSucHome {
+  color: #356E48;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.692);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
   margin: 2rem;
-  color: white;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
 }
-.Sucursales .CasaCentral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Sucursales .CasaCentral .CentralInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  height: 30vh;
-}
-.Sucursales .CasaCentral .CentralInfo h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
-}
-.Sucursales .CasaCentral .CentralInfo p {
-  text-align: center;
-  margin: 2rem 2rem 0rem 2rem;
-}
-.Sucursales .CasaCentral .SucursalCentral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Sucursales .CasaCentral .SucursalCentral .ImgSucursalCentral {
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
-}
-.Sucursales .ValleMaria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Sucursales .ValleMaria .SucInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  height: 30vh;
-}
-.Sucursales .ValleMaria .SucInfo h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.397);
-}
-.Sucursales .ValleMaria .SucInfo p {
-  text-align: center;
-  margin: 2rem 2rem 0rem 2rem;
-}
-.Sucursales .ValleMaria .SucursalValle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.Sucursales .ValleMaria .SucursalValle .ImgSucursalCentral {
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
+.Sucursales .ContainerTittleSucHome .TextSucHome {
   margin: 2rem;
-  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.582));
+  text-align: center;
+  color: #00471A;
+  font-size: 1.2rem;
+}
+.Sucursales .containerSucursal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Sucursales .containerSucursal .infoCasaCentral {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  border-radius: 8px;
+}
+.Sucursales .containerSucursal .infoCasaCentral h3 {
+  color: #FE6600;
+}
+.Sucursales .containerSucursal .infoCasaCentral h2 {
+  color: #00471A;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Sucursales .containerSucursal .infoCasaCentral hr {
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+.Sucursales .containerSucursal .infoCasaCentral .location, .Sucursales .containerSucursal .infoCasaCentral .emailAdress, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.Sucursales .containerSucursal .infoCasaCentral .location img, .Sucursales .containerSucursal .infoCasaCentral .emailAdress img, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber img {
+  width: 32px;
+  height: 32px;
+}
+.Sucursales .containerSucursal .infoCasaCentral .location .infoLocation, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoUno {
+  font-weight: 600;
+}
+.Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoTres {
+  font-size: 0.7rem;
+}
+.Sucursales .containerSucursal .mapCasaCentral {
+  width: 90%;
+  height: 256px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+.Sucursales .containerSucursal .mapCasaCentral iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
-@media only screen and (min-width: 1200px) {
-  .Sucursales {
-    padding-bottom: 100px;
-  }
-  .Sucursales .TittleSucursal {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Sucursales .ContainerTittleSucHome .TittleSucHome {
+    margin-top: 4rem;
     font-size: 3rem;
-    font-weight: 800;
-    margin: 2rem;
-    color: white;
   }
-  .Sucursales .CasaCentral {
+  .Sucursales .ContainerTittleSucHome .TextSucHome {
+    margin: 2rem 3rem;
+    text-align: center;
+    color: #00471A;
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+  .Sucursales .containerSucursal {
     flex-direction: row;
-    margin-top: 5rem;
   }
-  .Sucursales .CasaCentral .CentralInfo {
-    width: 50%;
-    align-items: start;
+  .Sucursales .containerSucursal .infoCasaCentral {
+    min-width: 350px;
+    max-width: 500px;
   }
-  .Sucursales .CasaCentral .CentralInfo h2 {
-    margin-left: 2rem;
-    text-align: start;
+  .Sucursales .containerSucursal .infoCasaCentral h3 {
+    font-size: 1rem;
   }
-  .Sucursales .CasaCentral .CentralInfo p {
-    text-align: start;
-    font-size: 1.5rem;
+  .Sucursales .containerSucursal .infoCasaCentral h2 {
+    font-size: 1rem;
   }
-  .Sucursales .CasaCentral .SucursalCentral {
-    width: 50%;
+  .Sucursales .containerSucursal .mapCasaCentral {
+    min-width: 350px;
+    max-width: 500px;
+    height: 453.22px;
   }
-  .Sucursales .CasaCentral .SucursalCentral .ImgSucursalCentral {
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .Sucursales .ContainerTittleSucHome .TittleSucHome {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+  .Sucursales .ContainerTittleSucHome .TextSucHome {
+    margin: 2rem 3rem;
+    text-align: center;
+    color: #00471A;
+    font-size: 1.2rem;
+    max-width: 800px;
+  }
+  .Sucursales .containerSucursal {
+    flex-direction: row;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral {
     width: 500px;
   }
-  .Sucursales .ValleMaria {
-    flex-direction: row-reverse;
+  .Sucursales .containerSucursal .infoCasaCentral h3 {
+    font-size: 1rem;
   }
-  .Sucursales .ValleMaria .SucInfo {
-    width: 50%;
-    align-items: start;
-  }
-  .Sucursales .ValleMaria .SucInfo h2 {
-    margin-left: 2rem;
-    text-align: start;
-  }
-  .Sucursales .ValleMaria .SucInfo p {
-    text-align: start;
+  .Sucursales .containerSucursal .infoCasaCentral h2 {
     font-size: 1.5rem;
   }
-  .Sucursales .ValleMaria .SucursalValle {
-    width: 50%;
+  .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoUno {
+    font-size: 1.2rem;
   }
-  .Sucursales .ValleMaria .SucursalValle .ImgSucursalCentral {
+  .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoTres {
+    font-size: 0.8rem;
+  }
+  .Sucursales .containerSucursal .mapCasaCentral {
     width: 500px;
+    height: 480.39px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Sucursales .ContainerTittleSucHome .TittleSucHome {
+    margin-top: 4rem;
+    font-size: 4rem;
+  }
+  .Sucursales .ContainerTittleSucHome .TextSucHome {
+    margin: 2rem 3rem;
+    text-align: center;
+    color: #00471A;
+    font-size: 1.3rem;
+    max-width: 800px;
+  }
+  .Sucursales .containerSucursal {
+    flex-direction: row;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral {
+    padding: 3rem;
+    width: 600px;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral h3 {
+    font-size: 1.5rem;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral h2 {
+    font-size: 2rem;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoUno, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoUno {
+    font-size: 1.5rem;
+  }
+  .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .location .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .emailAdress .infoLocation .parrafoTres, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoDos, .Sucursales .containerSucursal .infoCasaCentral .phoneNumber .infoLocation .parrafoTres {
+    font-size: 1rem;
+  }
+  .Sucursales .containerSucursal .mapCasaCentral {
+    width: 600px;
+    height: 594px;
   }
 }
 .ContainerProductos {
@@ -721,7 +772,7 @@ table {
   padding-bottom: 3rem;
   letter-spacing: -1.5px;
   color: #356E48;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.692);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.692);
 }
 .ContainerProductos .ContaineProductosDestacados {
   background-color: #F3F3F3;
