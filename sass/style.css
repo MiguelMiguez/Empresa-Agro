@@ -3553,6 +3553,9 @@ ol, ul {
     width: 35%;
     height: 594px;
   }
+  .containerFormContacto {
+    margin: 2rem 2rem 5rem 2rem;
+  }
   .containerFormContacto .formularioDeContacto {
     padding: 4rem;
     width: 100%;

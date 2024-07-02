@@ -25,6 +25,8 @@ buttonToggleMenu.addEventListener('click', () =>{
 
 let mision = document.getElementById('mision')
 let buttondown = document.getElementById ('buttondown')
+let formulario = document.getElementById ('formulario')
+let buttoncontacto = document.getElementById ('buttoncontacto')
 
 document.addEventListener("DOMContentLoaded", function(){
     buttondown.addEventListener('click', function(){
@@ -34,7 +36,18 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     });
 
+    buttoncontacto.addEventListener('click', function(){
+        let targetElement = document.getElementById ("formulario");
+        targetElement.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+
 });
+
+
+
+
 
 
 let copy = document.querySelector(".LogoGallery").cloneNode(true);
@@ -44,3 +57,7 @@ document.querySelector(".ContainerPasarelaLogos").appendChild(copy.cloneNode(tru
 document.querySelector(".ContainerPasarelaLogos").appendChild(copy.cloneNode(true));
 document.querySelector(".ContainerPasarelaLogos").appendChild(copy.cloneNode(true));
 document.querySelector(".ContainerPasarelaLogos").appendChild(copy.cloneNode(true));
+
+
+
+
