@@ -210,6 +210,7 @@ table {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+  width: 100%;
   background-image: url(../img/portada\ 3.jpg);
   background-position: center;
   background-size: cover;
@@ -302,14 +303,14 @@ table {
   .ContainerLanding .ContainerBrand .ContainerImgBrand {
     position: absolute;
     right: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: end;
     background-image: url(../img/portada\ 3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 90vh;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.582));
   }
   .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
@@ -346,14 +347,14 @@ table {
   .ContainerLanding .ContainerBrand .ContainerImgBrand {
     position: absolute;
     right: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: end;
     background-image: url(../img/portada\ 3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 90vh;
   }
   .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
     width: 400px;
@@ -389,14 +390,14 @@ table {
   .ContainerLanding .ContainerBrand .ContainerImgBrand {
     position: absolute;
     right: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: end;
     background-image: url(../img/portada\ 3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 90vh;
   }
   .ContainerLanding .ContainerBrand .ContainerImgBrand .BrandLanding {
     width: 500px;
@@ -2032,42 +2033,15 @@ ol, ul {
   transform: scale(1.05);
 }
 .ContainerNosotros .valores {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  grid-template-areas: "etica responsabilidad responsabilidad trabajo" "confianza valores valores trabajo" "confianza empatia integridad trabajo" "compromiso compromiso relaciones relaciones";
 }
-.ContainerNosotros .valores .responsabilidad {
-  grid-area: responsabilidad;
-}
-.ContainerNosotros .valores .principal {
-  grid-area: valores;
-  font-size: 3rem;
-}
-.ContainerNosotros .valores .etica {
-  grid-area: etica;
-  writing-mode: vertical-rl;
-}
-.ContainerNosotros .valores .trabajo {
-  grid-area: trabajo;
-  writing-mode: vertical-rl;
-}
-.ContainerNosotros .valores .relaciones {
-  grid-area: relaciones;
-}
-.ContainerNosotros .valores .integridad {
-  grid-area: integridad;
-}
-.ContainerNosotros .valores .empatia {
-  grid-area: empatia;
-}
-.ContainerNosotros .valores .confianza {
-  grid-area: confianza;
-  writing-mode: vertical-rl;
-}
-.ContainerNosotros .valores .compromiso {
-  grid-area: compromiso;
+.ContainerNosotros .valores .LluviaIdeas {
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+  margin: 2rem;
 }
 .ContainerNosotros .Video {
   display: flex;
