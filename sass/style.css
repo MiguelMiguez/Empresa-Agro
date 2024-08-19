@@ -257,6 +257,7 @@ table {
 .ContainerLanding .ContainerButtonDown .ButtonDown {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .ContainerLanding .ContainerButtonDown .ButtonDown .ImgBtnDown {
   width: 45px;
@@ -2424,6 +2425,7 @@ ol, ul {
   align-items: center;
   gap: 8rem;
   padding: 0 2rem;
+  margin: 6rem 0rem;
 }
 .containerCardsPersonalEncargado .cardPersonalEncargado {
   width: 80%;
